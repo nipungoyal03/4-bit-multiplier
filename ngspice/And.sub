@@ -1,0 +1,13 @@
+
+*.SUBCKT nand nodeA nodeB node5 node1 gnd
+.include Nand.sub
+.include 22nm_MGK.pm
+.SUBCKT And A B C vdd gnd
+
+
+
+Xn1 A B 1 vdd gnd Nand
+Xn2 1 1 C vdd gnd Nand
+
+
+.ends

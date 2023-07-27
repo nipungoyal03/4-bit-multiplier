@@ -1,0 +1,23 @@
+* SPICE3 file created from nand.ext - technology: scmos
+.include 22nm_MGK.pm
+
+.option scale=0.01u
+
+vin va GND pulse 0 1 0ns 100ps 100ps 10ns 20ns
+vinn vb GND pulse 0 1 0ns 100ps 100ps 10ns 20ns
+
+M1000 vout va VDD w_n24_n9# pmos w=108 l=27
++  ad=16038 pd=522 as=27702 ps=990
+M1001 VDD vb vout w_n24_n9# pmos w=108 l=27
++  ad=0 pd=0 as=0 ps=0
+M1002 a_n5_n39# va GND Gnd nmos w=54 l=27
++  ad=8910 pd=378 as=6480 ps=324
+M1003 vout vb a_n5_n39# Gnd nmos w=54 l=27
++  ad=8910 pd=378 as=0 ps=0
+
+
+.control
+tran 1n 120n
+run
+plot v(va)+4 v(vb)+2 v(vout)
+.endc  

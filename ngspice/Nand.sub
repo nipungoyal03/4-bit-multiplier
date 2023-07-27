@@ -1,0 +1,18 @@
+
+.SUBCKT Nand A B Output vdd gnd
+
+
+Mn1 Output B node4 gnd nmos W={width_P} L={LAMBDA} 
++ AS={5*width_P*LAMBDA} PS={10*LAMBDA+2*width_P} AD={5*width_P*LAMBDA} PD={10*LAMBDA+2*width_P}
+
+Mn2 node4 A gnd gnd nmos W={width_P} L={LAMBDA} 
++ AS={5*width_P*LAMBDA} PS={10*LAMBDA+2*width_P} AD={5*width_P*LAMBDA} PD={10*LAMBDA+2*width_P}
+
+Mp1 Output A vdd vdd pmos W={width_P} L={LAMBDA} 
++ AS={5*width_P*LAMBDA} PS={10*LAMBDA+2*width_P} AD={5*width_P*LAMBDA} PD={10*LAMBDA+2*width_P}
+
+Mp2 Output B vdd vdd pmos W={width_P} L={LAMBDA} 
++ AS={5*width_P*LAMBDA} PS={10*LAMBDA+2*width_P} AD={5*width_P*LAMBDA} PD={10*LAMBDA+2*width_P}
+
+Cout Output gnd 2f
+.ends

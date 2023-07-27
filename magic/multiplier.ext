@@ -1,0 +1,175 @@
+timestamp 1668279136
+version 8.1
+tech scmos
+style TSMC0.18um(tsmc18)from:t11b
+scale 1000 1 9
+resistclasses 6700 7500 929000 929000 1 7700 7700 80 80 80 70 70 40
+use and and_0 1 0 -335 0 1 1038
+use and and_1 1 0 37 0 1 1050
+use and and_2 1 0 319 0 1 1072
+use and and_3 1 0 578 0 1 1072
+use main-block main-block_0 1 0 0 0 1 0
+use main-block main-block_1 1 0 1584 0 1 -1987
+use main-block main-block_2 1 0 3276 0 1 -3960
+node "p7" 4 2238.01 6124 -4379 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4122 934 0 0 0 0 0 0 0 0 0 0
+node "p6" 6 1805.75 6034 -4387 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2760 932 0 0 0 0 0 0 0 0 0 0
+node "p5" 5 1940.42 5212 -4383 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3199 928 0 0 0 0 0 0 0 0 0 0
+node "p4" 3 1903.56 4420 -4342 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3501 796 0 0 0 0 0 0 0 0 0 0
+node "p3" 4 1819.45 3735 -4342 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3184 812 0 0 0 0 0 0 0 0 0 0
+node "b3" 23 3762.49 5315 -3073 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4596 2306 0 0 0 0 0 0 0 0 0 0
+node "m1_4012_n3137#" 14 7802.48 4012 -3137 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14454 3230 0 0 0 0 0 0 0 0 0 0
+node "m1_3820_n3179#" 23 6835.97 3820 -3179 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10500 3512 0 0 0 0 0 0 0 0 0 0
+node "m1_3520_n2394#" 15 5725.76 3520 -2394 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9485 2724 0 0 0 0 0 0 0 0 0 0
+node "m1_2728_n2540#" 20 10725.3 2728 -2540 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19881 4436 0 0 0 0 0 0 0 0 0 0
+node "p2" 23 10614.5 2043 -4313 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18712 4694 0 0 0 0 0 0 0 0 0 0
+node "b2" 29 4664.35 3623 -1091 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5700 2858 0 0 0 0 0 0 0 0 0 0
+node "m1_2316_n1147#" 15 8418.06 2316 -1147 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15597 3484 0 0 0 0 0 0 0 0 0 0
+node "m1_2117_n1171#" 25 7210.32 2117 -1171 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11076 3704 0 0 0 0 0 0 0 0 0 0
+node "m1_1839_n1156#" 15 5447.55 1839 -1156 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9023 2592 0 0 0 0 0 0 0 0 0 0
+node "m1_1144_n510#" 16 8704.04 1144 -510 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 16128 3602 0 0 0 0 0 0 0 0 0 0
+node "p1" 43 19463.9 459 -4291 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34336 8600 0 0 0 0 0 0 0 0 0 0
+node "zero" 1 2281.61 723 848 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5256 620 0 0 0 0 0 0 0 0 0 0
+node "b1" 29 4742.77 2039 894 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5796 2906 0 0 0 0 0 0 0 0 0 0
+node "m1_539_841#" 5 1081.49 539 841 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1495 608 0 0 0 0 0 0 0 0 0 0
+node "m1_258_844#" 5 1149.57 258 844 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1590 646 0 0 0 0 0 0 0 0 0 0
+node "m1_73_934#" 5 1067.15 73 934 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1475 600 0 0 0 0 0 0 0 0 0 0
+node "p0" 85 19092.2 -299 -4296 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 26625 10660 0 0 0 0 0 0 0 0 0 0
+node "b0" 26 4200.35 -378 1113 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5132 2574 0 0 0 0 0 0 0 0 0 0
+node "a0" 208 48829.4 -367 1105 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 62651 25140 1810 764 0 0 0 0 0 0 0 0
+node "a1" 207 66661.3 5 1080 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50750 20350 13680 5512 0 0 0 0 0 0 0 0
+node "a2" 208 67279.7 287 1102 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50690 20326 14050 5660 0 0 0 0 0 0 0 0
+node "a3" 211 68683.1 546 1102 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50740 20346 14735 5934 0 0 0 0 0 0 0 0
+cap "a3" "a0" 324.877
+cap "a0" "b2" 426.618
+cap "a2" "b3" 361.815
+cap "b0" "a0" 285.231
+cap "a1" "a0" 324.877
+cap "a3" "b3" 338.251
+cap "a2" "b1" 526.767
+cap "a2" "a3" 324.877
+cap "a2" "b2" 491.421
+cap "a1" "b3" 367.707
+cap "a2" "b0" 232.21
+cap "a3" "b1" 514.985
+cap "a0" "b3" 238.101
+cap "a2" "a1" 324.877
+cap "a3" "b2" 461.965
+cap "a2" "a0" 324.877
+cap "a3" "b0" 226.319
+cap "a1" "b1" 332.36
+cap "a3" "a1" 324.877
+cap "a0" "b1" 621.026
+cap "a1" "b2" 615.135
+cap "a1" "b0" 320.577
+subcap "m1_3820_n3179#" -6848.27
+subcap "m1_3820_n3179#" -7028.25
+subcap "m1_3820_n3179#" -6721.98
+subcap "m1_3820_n3179#" -6105.17
+subcap "m1_4012_n3137#" -7585.69
+subcap "b3" -3591.83
+cap "main-block_2/and_0/va" "main-block_2/and_0/vb" -32.4013
+subcap "b3" -3810.82
+cap "main-block_2/and_0/va" "main-block_2/and_0/vb" -32.4013
+cap "main-block_2/and_1/vb" "main-block_2/and_1/va" -76.5849
+cap "main-block_2/and_2/vb" "b3" -147.279
+cap "main-block_2/and_3/va" "main-block_2/and_3/vb" -76.5849
+subcap "m1_1839_n1156#" -4932.42
+subcap "m1_2117_n1171#" -7138.34
+subcap "m1_2117_n1171#" -6572.93
+subcap "m1_2316_n1147#" -8287.51
+subcap "m1_2316_n1147#" -7877.03
+subcap "b2" -4682.35
+subcap "b2" -4425.37
+cap "main-block_1/and_0/va" "main-block_1/and_0/vb" -11.7823
+cap "main-block_1/and_1/vb" "main-block_1/and_1/va" -47.1291
+cap "main-block_1/and_2/vb" "main-block_1/and_2/va" -17.6734
+subcap "b2" -4671.93
+subcap "b2" -4581.92
+cap "main-block_1/and_1/va" "main-block_1/and_1/vb" -53.0203
+cap "main-block_1/and_2/va" "main-block_1/and_2/vb" -88.3671
+cap "main-block_1/and_3/vb" "main-block_1/and_3/va" -29.4557
+cap "main-block_1/and_3/vb" "main-block_1/and_3/va" -29.4557
+subcap "m1_258_844#" -801.524
+subcap "m1_539_841#" -711.315
+subcap "zero" -2304.99
+subcap "zero" -1694.5
+subcap "b1" -4461.31
+cap "main-block_0/and_0/va" "main-block_0/and_0/vb" -23.5646
+cap "main-block_0/and_1/vb" "main-block_0/and_1/va" -29.4557
+cap "main-block_0/and_3/vb" "main-block_0/and_3/va" -17.6734
+cap "main-block_0/and_3/vb" "main-block_0/and_3/va" -11.7823
+subcap "b0" -3660.82
+subcap "a0" -48381.7
+subcap "a1" -66487.9
+subcap "a2" -67185.1
+subcap "a3" -68363.4
+subcap "b0" -4163.66
+subcap "a0" -48788.6
+cap "and_0/va" "and_0/vb" -5.89114
+cap "and_1/vb" "and_1/va" -41.238
+cap "and_2/vb" "and_2/va" -35.3469
+cap "and_3/vb" "and_3/va" -47.1291
+merge "and_3/va" "and_2/va" -100.378 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -64 -80 0 0 0 0 0 0 0 0 0 0
+merge "and_2/va" "and_1/va"
+merge "and_1/va" "and_0/va"
+merge "and_0/va" "b0"
+merge "and_1/vb" "main-block_0/and_1/vb" -668.787 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -750 -431 0 0 0 0 0 0 0 0 0 0
+merge "main-block_0/and_1/vb" "main-block_1/and_1/vb"
+merge "main-block_1/and_1/vb" "main-block_2/and_1/vb"
+merge "main-block_2/and_1/vb" "a1"
+merge "and_0/vb" "main-block_0/and_0/vb" -566.914 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -418 -434 0 0 0 0 0 0 0 0 0 0
+merge "main-block_0/and_0/vb" "main-block_1/and_0/vb"
+merge "main-block_1/and_0/vb" "main-block_2/and_0/vb"
+merge "main-block_2/and_0/vb" "a0"
+merge "main-block_1/and_3/va" "main-block_1/and_2/va" -168.898 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -135 -126 0 0 0 0 0 0 0 0 0 0
+merge "main-block_1/and_2/va" "main-block_1/and_1/va"
+merge "main-block_1/and_1/va" "main-block_1/and_0/va"
+merge "main-block_1/and_0/va" "b2"
+merge "main-block_0/4_full_adder_0/S2" "main-block_1/m1_251_762#" -247.632 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -343 -139 0 0 0 0 0 0 0 0 0 0
+merge "main-block_1/m1_251_762#" "m1_1839_n1156#"
+merge "and_3/vout" "main-block_0/m1_533_787#" -64.7301 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -59 -46 0 0 0 0 0 0 0 0 0 0
+merge "main-block_0/m1_533_787#" "m1_539_841#"
+merge "main-block_1/4_full_adder_0/carry" "main-block_2/m1_723_811#" -84.8688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72 -62 0 0 0 0 0 0 0 0 0 0
+merge "main-block_2/m1_723_811#" "m1_4012_n3137#"
+merge "main-block_0/and_3/va" "main-block_0/and_2/va" -99.1239 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -41 -86 0 0 0 0 0 0 0 0 0 0
+merge "main-block_0/and_2/va" "main-block_0/and_1/va"
+merge "main-block_0/and_1/va" "main-block_0/and_0/va"
+merge "main-block_0/and_0/va" "b1"
+merge "and_1/vout" "main-block_0/m1_161_769#" -59.4585 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -55 -42 0 0 0 0 0 0 0 0 0 0
+merge "main-block_0/m1_161_769#" "m1_73_934#"
+merge "and_3/vb" "and_3/nand_0/va" -584.718 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -560 -407 0 0 0 0 0 0 0 0 0 0
+merge "and_3/nand_0/va" "main-block_0/and_3/vb"
+merge "main-block_0/and_3/vb" "main-block_1/and_3/vb"
+merge "main-block_1/and_3/vb" "main-block_2/and_3/vb"
+merge "main-block_2/and_3/vb" "a3"
+merge "main-block_2/and_3/va" "main-block_2/and_2/va" -224.231 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -215 -156 0 0 0 0 0 0 0 0 0 0
+merge "main-block_2/and_2/va" "main-block_2/and_1/va"
+merge "main-block_2/and_1/va" "main-block_2/and_0/va"
+merge "main-block_2/and_0/va" "b3"
+merge "and_2/vout" "main-block_0/m1_251_762#" -52.2915 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45 -38 0 0 0 0 0 0 0 0 0 0
+merge "main-block_0/m1_251_762#" "m1_258_844#"
+merge "main-block_1/4_full_adder_0/S2" "main-block_2/m1_251_762#" -188.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -238 -113 0 0 0 0 0 0 0 0 0 0
+merge "main-block_2/m1_251_762#" "m1_3520_n2394#"
+merge "main-block_1/4_full_adder_0/S1" "main-block_2/m1_161_769#" -34.779 0 0 0 0 0 0 0 0 0 0 0 0 0 0 150 -82 0 0 0 0 0 0 0 0 0 0
+merge "main-block_2/m1_161_769#" "m1_2728_n2540#"
+merge "main-block_2/4_full_adder_0/carry" "p7" -64.4043 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -77 -40 0 0 0 0 0 0 0 0 0 0
+merge "main-block_0/4_full_adder_0/S1" "main-block_1/m1_161_769#" -277.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -442 -138 0 0 0 0 0 0 0 0 0 0
+merge "main-block_1/m1_161_769#" "m1_1144_n510#"
+merge "and_2/vb" "main-block_0/and_2/vb" -630.825 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -633 -430 0 0 0 0 0 0 0 0 0 0
+merge "main-block_0/and_2/vb" "main-block_1/and_2/vb"
+merge "main-block_1/and_2/vb" "main-block_2/and_2/vb"
+merge "main-block_2/and_2/vb" "a2"
+merge "main-block_0/4_full_adder_0/carry" "main-block_1/m1_723_811#" -316.528 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -504 -157 0 0 0 0 0 0 0 0 0 0
+merge "main-block_1/m1_723_811#" "m1_2316_n1147#"
+merge "and_0/vout" "p0" -10.02 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10 0 0 0 0 0 0 0 0 0 0
+merge "main-block_0/4_full_adder_0/S3" "main-block_1/m1_533_787#" -205.533 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -270 -120 0 0 0 0 0 0 0 0 0 0
+merge "main-block_1/m1_533_787#" "m1_2117_n1171#"
+merge "main-block_2/4_full_adder_0/S0" "p3" -88.5312 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -128 -48 0 0 0 0 0 0 0 0 0 0
+merge "main-block_1/4_full_adder_0/S0" "p2" -131.75 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -176 -76 0 0 0 0 0 0 0 0 0 0
+merge "main-block_2/4_full_adder_0/S2" "p5" -72.8448 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -72 -50 0 0 0 0 0 0 0 0 0 0
+merge "main-block_2/4_full_adder_0/S1" "p4" -47.1186 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -54 -30 0 0 0 0 0 0 0 0 0 0
+merge "main-block_0/4_full_adder_0/S0" "p1" -122.688 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -160 -72 0 0 0 0 0 0 0 0 0 0
+merge "main-block_2/4_full_adder_0/S3" "p6" -43.2192 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -48 -28 0 0 0 0 0 0 0 0 0 0
+merge "main-block_1/4_full_adder_0/S3" "main-block_2/4_full_adder_0/b2" -101.384 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -156 -52 0 0 0 0 0 0 0 0 0 0
+merge "main-block_2/4_full_adder_0/b2" "m1_3820_n3179#"
+merge "main-block_0/m1_723_811#" "zero" -36.072 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -36 0 0 0 0 0 0 0 0 0 0

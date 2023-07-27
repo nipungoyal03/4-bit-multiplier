@@ -1,0 +1,76 @@
+* SPICE3 file created from full_adder.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 c_out nand_6/va VDD nand_8/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=3078 ps=990
+M1001 VDD nand_2/va c_out nand_8/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1002 nand_8/a_n5_n39# nand_6/va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=720 ps=324
+M1003 c_out nand_2/va nand_8/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1004 nand_7/vb nand_6/va VDD nand_6/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1005 VDD c_in nand_7/vb nand_6/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1006 nand_6/a_n5_n39# nand_6/va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1007 nand_7/vb c_in nand_6/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1008 nand_3/vb nand_2/va VDD nand_2/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1009 VDD vb nand_3/vb nand_2/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1010 nand_2/a_n5_n39# nand_2/va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1011 nand_3/vb vb nand_2/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1012 sum nand_7/va VDD nand_7/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1013 VDD nand_7/vb sum nand_7/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1014 nand_7/a_n5_n39# nand_7/va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1015 sum nand_7/vb nand_7/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1016 nand_6/va nand_4/va VDD nand_4/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1017 VDD c_in nand_6/va nand_4/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1018 nand_4/a_n5_n39# nand_4/va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1019 nand_6/va c_in nand_4/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1020 nand_4/va nand_3/va VDD nand_3/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1021 VDD nand_3/vb nand_4/va nand_3/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1022 nand_3/a_n5_n39# nand_3/va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1023 nand_4/va nand_3/vb nand_3/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1024 nand_2/va va VDD nand_0/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1025 VDD vb nand_2/va nand_0/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1026 nand_0/a_n5_n39# va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1027 nand_2/va vb nand_0/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1028 nand_7/va nand_4/va VDD nand_5/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1029 VDD nand_6/va nand_7/va nand_5/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1030 nand_5/a_n5_n39# nand_4/va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1031 nand_7/va nand_6/va nand_5/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1032 nand_3/va va VDD nand_1/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1033 VDD nand_2/va nand_3/va nand_1/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1034 nand_1/a_n5_n39# va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1035 nand_3/va nand_2/va nand_1/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0

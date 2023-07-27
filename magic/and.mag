@@ -1,0 +1,35 @@
+magic
+tech scmos
+timestamp 1668259600
+<< polysilicon >>
+rect 56 1 59 2
+rect 70 1 73 2
+rect -5 0 -2 1
+rect 9 0 12 1
+<< metal1 >>
+rect -43 22 -39 76
+rect -32 30 -28 76
+rect 35 30 51 31
+rect -32 25 -10 30
+rect 23 26 51 30
+rect 84 26 96 31
+rect 23 25 31 26
+rect 26 23 31 25
+rect -43 17 -10 22
+rect 26 18 51 23
+rect 91 -2 96 26
+rect 36 -7 96 -2
+rect 36 -9 41 -7
+use nand  nand_0
+timestamp 1594232584
+transform 1 0 3 0 1 42
+box -24 -41 28 30
+use nand  nand_1
+timestamp 1594232584
+transform 1 0 64 0 1 43
+box -24 -41 28 30
+<< labels >>
+rlabel metal1 -41 72 -40 72 4 va
+rlabel metal1 -31 70 -30 70 1 vb
+rlabel metal1 38 -7 39 -7 1 vout
+<< end >>

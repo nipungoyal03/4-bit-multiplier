@@ -1,0 +1,44 @@
+* SPICE3 file created from half_adder.ext - technology: scmos
+
+.option scale=0.09u
+
+M1000 c_out nand_2/va VDD nand_4/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=1710 ps=550
+M1001 VDD nand_2/va c_out nand_4/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1002 nand_4/a_n5_n39# nand_2/va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=400 ps=180
+M1003 c_out nand_2/va nand_4/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1004 nand_3/vb nand_2/va VDD nand_2/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1005 VDD vb nand_3/vb nand_2/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1006 nand_2/a_n5_n39# nand_2/va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1007 nand_3/vb vb nand_2/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1008 sum nand_3/va VDD nand_3/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1009 VDD nand_3/vb sum nand_3/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1010 nand_3/a_n5_n39# nand_3/va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1011 sum nand_3/vb nand_3/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1012 nand_2/va va VDD nand_0/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1013 VDD vb nand_2/va nand_0/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1014 nand_0/a_n5_n39# va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1015 nand_2/va vb nand_0/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1016 nand_3/va va VDD nand_1/w_n24_n9# pfet w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1017 VDD nand_2/va nand_3/va nand_1/w_n24_n9# pfet w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1018 nand_1/a_n5_n39# va GND Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1019 nand_3/va nand_2/va nand_1/a_n5_n39# Gnd nfet w=10 l=3
++  ad=110 pd=42 as=0 ps=0

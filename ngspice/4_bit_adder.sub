@@ -1,0 +1,15 @@
+
+*.SUBCKT nand nodeA nodeB node5 node1 gnd
+.include 22nm_MGK.pm
+.include Nand.sub
+.include Half_adder.sub
+
+.SUBCKT 4_bit_adder a0 a1 a2 a3 b0 b1 b2 b3 s0 s1 s2 s3 c vdd gnd
+
+Xh_a1 a0 b0 s0 C1 vdd gnd Half_adder
+Xh_a2 a1 b1 C1 s1 C2 vdd gnd full_adder
+Xh_a3 a2 b2 C2 s2 C3 vdd gnd full_adder
+Xh_a4 a3 b3 C3 s3 c vdd gnd full_adder
+
+
+.ends

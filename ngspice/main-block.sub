@@ -1,0 +1,11 @@
+
+.SUBCKT main_block A0 A1 A2 A3 B b0 b1 b2 b3 S0 S1 S2 S3 carry vdd gnd
+
+XD1 A3 B A3B vdd gnd And
+XD2 A2 B A2B vdd gnd And
+XD3 A1 B A1B vdd gnd And
+XD4 A0 B A0B vdd gnd And
+
+XD5 A0B A1B A2B A3B b0 b1 b2 b3 S0 S1 S2 S3 carry vdd gnd 4_bit_adder
+
+.ends

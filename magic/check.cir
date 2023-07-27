@@ -1,0 +1,1103 @@
+* SPICE3 file created from and.ext - technology: scmos
+.include 22nm_MGK.pm
+.param SUPPLY = 1
+.option scale=0.01u
+
+VDS VDD GND 'SUPPLY'
+
+
+* va a0 GND 0s
+* vb a1 GND 0
+* vc a2 GND 0
+* va a3 GND 0s
+* vb b0 GND 0
+* vc b1 GND 0
+* va b2 GND 0s
+* vb b3 GND 0
+
+va a0 GND 1
+vb a1 GND 1
+vc a2 GND 1
+vd a3 GND 1
+ve b0 GND 1
+vf b1 GND 0
+vg b2 GND 0
+vh b3 GND 0
+vzero zero GND 0
+
+
+
+* SPICE3 file created from multiplier.ext - technology: scmos
+
+* SPICE3 file created from multiplier.ext - technology: scmos
+
+.option scale=0.01u
+
+M1000 p7 main-block_2/4_full_adder_0/full_adder_2/nand_6/va VDD main-block_2/4_full_adder_0/full_adder_2/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=43776 ps=14080
+M1001 VDD main-block_2/4_full_adder_0/full_adder_2/nand_2/va p7 main-block_2/4_full_adder_0/full_adder_2/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1002 main-block_2/4_full_adder_0/full_adder_2/nand_8/a_n5_n39# main-block_2/4_full_adder_0/full_adder_2/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=10240 ps=4608
+M1003 p7 main-block_2/4_full_adder_0/full_adder_2/nand_2/va main-block_2/4_full_adder_0/full_adder_2/nand_8/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1004 main-block_2/4_full_adder_0/full_adder_2/nand_7/vb main-block_2/4_full_adder_0/full_adder_2/nand_6/va VDD main-block_2/4_full_adder_0/full_adder_2/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1005 VDD main-block_2/4_full_adder_0/full_adder_2/c_in main-block_2/4_full_adder_0/full_adder_2/nand_7/vb main-block_2/4_full_adder_0/full_adder_2/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1006 main-block_2/4_full_adder_0/full_adder_2/nand_6/a_n5_n39# main-block_2/4_full_adder_0/full_adder_2/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1007 main-block_2/4_full_adder_0/full_adder_2/nand_7/vb main-block_2/4_full_adder_0/full_adder_2/c_in main-block_2/4_full_adder_0/full_adder_2/nand_6/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1008 main-block_2/4_full_adder_0/full_adder_2/nand_3/vb main-block_2/4_full_adder_0/full_adder_2/nand_2/va VDD main-block_2/4_full_adder_0/full_adder_2/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1009 VDD main-block_2/and_3/vout main-block_2/4_full_adder_0/full_adder_2/nand_3/vb main-block_2/4_full_adder_0/full_adder_2/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1010 main-block_2/4_full_adder_0/full_adder_2/nand_2/a_n5_n39# main-block_2/4_full_adder_0/full_adder_2/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1011 main-block_2/4_full_adder_0/full_adder_2/nand_3/vb main-block_2/and_3/vout main-block_2/4_full_adder_0/full_adder_2/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1012 p6 main-block_2/4_full_adder_0/full_adder_2/nand_7/va VDD main-block_2/4_full_adder_0/full_adder_2/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1013 VDD main-block_2/4_full_adder_0/full_adder_2/nand_7/vb p6 main-block_2/4_full_adder_0/full_adder_2/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1014 main-block_2/4_full_adder_0/full_adder_2/nand_7/a_n5_n39# main-block_2/4_full_adder_0/full_adder_2/nand_7/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1015 p6 main-block_2/4_full_adder_0/full_adder_2/nand_7/vb main-block_2/4_full_adder_0/full_adder_2/nand_7/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1016 main-block_2/4_full_adder_0/full_adder_2/nand_6/va main-block_2/4_full_adder_0/full_adder_2/nand_4/va VDD main-block_2/4_full_adder_0/full_adder_2/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1017 VDD main-block_2/4_full_adder_0/full_adder_2/c_in main-block_2/4_full_adder_0/full_adder_2/nand_6/va main-block_2/4_full_adder_0/full_adder_2/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1018 main-block_2/4_full_adder_0/full_adder_2/nand_4/a_n5_n39# main-block_2/4_full_adder_0/full_adder_2/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1019 main-block_2/4_full_adder_0/full_adder_2/nand_6/va main-block_2/4_full_adder_0/full_adder_2/c_in main-block_2/4_full_adder_0/full_adder_2/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1020 main-block_2/4_full_adder_0/full_adder_2/nand_4/va main-block_2/4_full_adder_0/full_adder_2/nand_3/va VDD main-block_2/4_full_adder_0/full_adder_2/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1021 VDD main-block_2/4_full_adder_0/full_adder_2/nand_3/vb main-block_2/4_full_adder_0/full_adder_2/nand_4/va main-block_2/4_full_adder_0/full_adder_2/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1022 main-block_2/4_full_adder_0/full_adder_2/nand_3/a_n5_n39# main-block_2/4_full_adder_0/full_adder_2/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1023 main-block_2/4_full_adder_0/full_adder_2/nand_4/va main-block_2/4_full_adder_0/full_adder_2/nand_3/vb main-block_2/4_full_adder_0/full_adder_2/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1024 main-block_2/4_full_adder_0/full_adder_2/nand_2/va main-block_2/4_full_adder_0/b3 VDD main-block_2/4_full_adder_0/full_adder_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1025 VDD main-block_2/and_3/vout main-block_2/4_full_adder_0/full_adder_2/nand_2/va main-block_2/4_full_adder_0/full_adder_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1026 main-block_2/4_full_adder_0/full_adder_2/nand_0/a_n5_n39# main-block_2/4_full_adder_0/b3 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1027 main-block_2/4_full_adder_0/full_adder_2/nand_2/va main-block_2/and_3/vout main-block_2/4_full_adder_0/full_adder_2/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1028 main-block_2/4_full_adder_0/full_adder_2/nand_7/va main-block_2/4_full_adder_0/full_adder_2/nand_4/va VDD main-block_2/4_full_adder_0/full_adder_2/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1029 VDD main-block_2/4_full_adder_0/full_adder_2/nand_6/va main-block_2/4_full_adder_0/full_adder_2/nand_7/va main-block_2/4_full_adder_0/full_adder_2/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1030 main-block_2/4_full_adder_0/full_adder_2/nand_5/a_n5_n39# main-block_2/4_full_adder_0/full_adder_2/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1031 main-block_2/4_full_adder_0/full_adder_2/nand_7/va main-block_2/4_full_adder_0/full_adder_2/nand_6/va main-block_2/4_full_adder_0/full_adder_2/nand_5/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1032 main-block_2/4_full_adder_0/full_adder_2/nand_3/va main-block_2/4_full_adder_0/b3 VDD main-block_2/4_full_adder_0/full_adder_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1033 VDD main-block_2/4_full_adder_0/full_adder_2/nand_2/va main-block_2/4_full_adder_0/full_adder_2/nand_3/va main-block_2/4_full_adder_0/full_adder_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1034 main-block_2/4_full_adder_0/full_adder_2/nand_1/a_n5_n39# main-block_2/4_full_adder_0/b3 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1035 main-block_2/4_full_adder_0/full_adder_2/nand_3/va main-block_2/4_full_adder_0/full_adder_2/nand_2/va main-block_2/4_full_adder_0/full_adder_2/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1036 main-block_2/4_full_adder_0/full_adder_2/c_in main-block_2/4_full_adder_0/full_adder_1/nand_6/va VDD main-block_2/4_full_adder_0/full_adder_1/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1037 VDD main-block_2/4_full_adder_0/full_adder_1/nand_2/va main-block_2/4_full_adder_0/full_adder_2/c_in main-block_2/4_full_adder_0/full_adder_1/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1038 main-block_2/4_full_adder_0/full_adder_1/nand_8/a_n5_n39# main-block_2/4_full_adder_0/full_adder_1/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1039 main-block_2/4_full_adder_0/full_adder_2/c_in main-block_2/4_full_adder_0/full_adder_1/nand_2/va main-block_2/4_full_adder_0/full_adder_1/nand_8/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1040 main-block_2/4_full_adder_0/full_adder_1/nand_7/vb main-block_2/4_full_adder_0/full_adder_1/nand_6/va VDD main-block_2/4_full_adder_0/full_adder_1/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1041 VDD main-block_2/4_full_adder_0/full_adder_1/c_in main-block_2/4_full_adder_0/full_adder_1/nand_7/vb main-block_2/4_full_adder_0/full_adder_1/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1042 main-block_2/4_full_adder_0/full_adder_1/nand_6/a_n5_n39# main-block_2/4_full_adder_0/full_adder_1/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1043 main-block_2/4_full_adder_0/full_adder_1/nand_7/vb main-block_2/4_full_adder_0/full_adder_1/c_in main-block_2/4_full_adder_0/full_adder_1/nand_6/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1044 main-block_2/4_full_adder_0/full_adder_1/nand_3/vb main-block_2/4_full_adder_0/full_adder_1/nand_2/va VDD main-block_2/4_full_adder_0/full_adder_1/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1045 VDD main-block_2/and_2/vout main-block_2/4_full_adder_0/full_adder_1/nand_3/vb main-block_2/4_full_adder_0/full_adder_1/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1046 main-block_2/4_full_adder_0/full_adder_1/nand_2/a_n5_n39# main-block_2/4_full_adder_0/full_adder_1/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1047 main-block_2/4_full_adder_0/full_adder_1/nand_3/vb main-block_2/and_2/vout main-block_2/4_full_adder_0/full_adder_1/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1048 p5 main-block_2/4_full_adder_0/full_adder_1/nand_7/va VDD main-block_2/4_full_adder_0/full_adder_1/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1049 VDD main-block_2/4_full_adder_0/full_adder_1/nand_7/vb p5 main-block_2/4_full_adder_0/full_adder_1/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1050 main-block_2/4_full_adder_0/full_adder_1/nand_7/a_n5_n39# main-block_2/4_full_adder_0/full_adder_1/nand_7/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1051 p5 main-block_2/4_full_adder_0/full_adder_1/nand_7/vb main-block_2/4_full_adder_0/full_adder_1/nand_7/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1052 main-block_2/4_full_adder_0/full_adder_1/nand_6/va main-block_2/4_full_adder_0/full_adder_1/nand_4/va VDD main-block_2/4_full_adder_0/full_adder_1/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1053 VDD main-block_2/4_full_adder_0/full_adder_1/c_in main-block_2/4_full_adder_0/full_adder_1/nand_6/va main-block_2/4_full_adder_0/full_adder_1/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1054 main-block_2/4_full_adder_0/full_adder_1/nand_4/a_n5_n39# main-block_2/4_full_adder_0/full_adder_1/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1055 main-block_2/4_full_adder_0/full_adder_1/nand_6/va main-block_2/4_full_adder_0/full_adder_1/c_in main-block_2/4_full_adder_0/full_adder_1/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1056 main-block_2/4_full_adder_0/full_adder_1/nand_4/va main-block_2/4_full_adder_0/full_adder_1/nand_3/va VDD main-block_2/4_full_adder_0/full_adder_1/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1057 VDD main-block_2/4_full_adder_0/full_adder_1/nand_3/vb main-block_2/4_full_adder_0/full_adder_1/nand_4/va main-block_2/4_full_adder_0/full_adder_1/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1058 main-block_2/4_full_adder_0/full_adder_1/nand_3/a_n5_n39# main-block_2/4_full_adder_0/full_adder_1/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1059 main-block_2/4_full_adder_0/full_adder_1/nand_4/va main-block_2/4_full_adder_0/full_adder_1/nand_3/vb main-block_2/4_full_adder_0/full_adder_1/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1060 main-block_2/4_full_adder_0/full_adder_1/nand_2/va main-block_2/4_full_adder_0/b2 VDD main-block_2/4_full_adder_0/full_adder_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1061 VDD main-block_2/and_2/vout main-block_2/4_full_adder_0/full_adder_1/nand_2/va main-block_2/4_full_adder_0/full_adder_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1062 main-block_2/4_full_adder_0/full_adder_1/nand_0/a_n5_n39# main-block_2/4_full_adder_0/b2 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1063 main-block_2/4_full_adder_0/full_adder_1/nand_2/va main-block_2/and_2/vout main-block_2/4_full_adder_0/full_adder_1/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1064 main-block_2/4_full_adder_0/full_adder_1/nand_7/va main-block_2/4_full_adder_0/full_adder_1/nand_4/va VDD main-block_2/4_full_adder_0/full_adder_1/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1065 VDD main-block_2/4_full_adder_0/full_adder_1/nand_6/va main-block_2/4_full_adder_0/full_adder_1/nand_7/va main-block_2/4_full_adder_0/full_adder_1/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1066 main-block_2/4_full_adder_0/full_adder_1/nand_5/a_n5_n39# main-block_2/4_full_adder_0/full_adder_1/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1067 main-block_2/4_full_adder_0/full_adder_1/nand_7/va main-block_2/4_full_adder_0/full_adder_1/nand_6/va main-block_2/4_full_adder_0/full_adder_1/nand_5/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1068 main-block_2/4_full_adder_0/full_adder_1/nand_3/va main-block_2/4_full_adder_0/b2 VDD main-block_2/4_full_adder_0/full_adder_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1069 VDD main-block_2/4_full_adder_0/full_adder_1/nand_2/va main-block_2/4_full_adder_0/full_adder_1/nand_3/va main-block_2/4_full_adder_0/full_adder_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1070 main-block_2/4_full_adder_0/full_adder_1/nand_1/a_n5_n39# main-block_2/4_full_adder_0/b2 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1071 main-block_2/4_full_adder_0/full_adder_1/nand_3/va main-block_2/4_full_adder_0/full_adder_1/nand_2/va main-block_2/4_full_adder_0/full_adder_1/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1072 main-block_2/4_full_adder_0/full_adder_1/c_in main-block_2/4_full_adder_0/full_adder_0/nand_6/va VDD main-block_2/4_full_adder_0/full_adder_0/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1073 VDD main-block_2/4_full_adder_0/full_adder_0/nand_2/va main-block_2/4_full_adder_0/full_adder_1/c_in main-block_2/4_full_adder_0/full_adder_0/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1074 main-block_2/4_full_adder_0/full_adder_0/nand_8/a_n5_n39# main-block_2/4_full_adder_0/full_adder_0/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1075 main-block_2/4_full_adder_0/full_adder_1/c_in main-block_2/4_full_adder_0/full_adder_0/nand_2/va main-block_2/4_full_adder_0/full_adder_0/nand_8/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1076 main-block_2/4_full_adder_0/full_adder_0/nand_7/vb main-block_2/4_full_adder_0/full_adder_0/nand_6/va VDD main-block_2/4_full_adder_0/full_adder_0/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1077 VDD main-block_2/4_full_adder_0/full_adder_0/c_in main-block_2/4_full_adder_0/full_adder_0/nand_7/vb main-block_2/4_full_adder_0/full_adder_0/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1078 main-block_2/4_full_adder_0/full_adder_0/nand_6/a_n5_n39# main-block_2/4_full_adder_0/full_adder_0/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1079 main-block_2/4_full_adder_0/full_adder_0/nand_7/vb main-block_2/4_full_adder_0/full_adder_0/c_in main-block_2/4_full_adder_0/full_adder_0/nand_6/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1080 main-block_2/4_full_adder_0/full_adder_0/nand_3/vb main-block_2/4_full_adder_0/full_adder_0/nand_2/va VDD main-block_2/4_full_adder_0/full_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1081 VDD main-block_2/and_1/vout main-block_2/4_full_adder_0/full_adder_0/nand_3/vb main-block_2/4_full_adder_0/full_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1082 main-block_2/4_full_adder_0/full_adder_0/nand_2/a_n5_n39# main-block_2/4_full_adder_0/full_adder_0/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1083 main-block_2/4_full_adder_0/full_adder_0/nand_3/vb main-block_2/and_1/vout main-block_2/4_full_adder_0/full_adder_0/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1084 p4 main-block_2/4_full_adder_0/full_adder_0/nand_7/va VDD main-block_2/4_full_adder_0/full_adder_0/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1085 VDD main-block_2/4_full_adder_0/full_adder_0/nand_7/vb p4 main-block_2/4_full_adder_0/full_adder_0/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1086 main-block_2/4_full_adder_0/full_adder_0/nand_7/a_n5_n39# main-block_2/4_full_adder_0/full_adder_0/nand_7/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1087 p4 main-block_2/4_full_adder_0/full_adder_0/nand_7/vb main-block_2/4_full_adder_0/full_adder_0/nand_7/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1088 main-block_2/4_full_adder_0/full_adder_0/nand_6/va main-block_2/4_full_adder_0/full_adder_0/nand_4/va VDD main-block_2/4_full_adder_0/full_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1089 VDD main-block_2/4_full_adder_0/full_adder_0/c_in main-block_2/4_full_adder_0/full_adder_0/nand_6/va main-block_2/4_full_adder_0/full_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1090 main-block_2/4_full_adder_0/full_adder_0/nand_4/a_n5_n39# main-block_2/4_full_adder_0/full_adder_0/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1091 main-block_2/4_full_adder_0/full_adder_0/nand_6/va main-block_2/4_full_adder_0/full_adder_0/c_in main-block_2/4_full_adder_0/full_adder_0/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1092 main-block_2/4_full_adder_0/full_adder_0/nand_4/va main-block_2/4_full_adder_0/full_adder_0/nand_3/va VDD main-block_2/4_full_adder_0/full_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1093 VDD main-block_2/4_full_adder_0/full_adder_0/nand_3/vb main-block_2/4_full_adder_0/full_adder_0/nand_4/va main-block_2/4_full_adder_0/full_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1094 main-block_2/4_full_adder_0/full_adder_0/nand_3/a_n5_n39# main-block_2/4_full_adder_0/full_adder_0/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1095 main-block_2/4_full_adder_0/full_adder_0/nand_4/va main-block_2/4_full_adder_0/full_adder_0/nand_3/vb main-block_2/4_full_adder_0/full_adder_0/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1096 main-block_2/4_full_adder_0/full_adder_0/nand_2/va main-block_2/4_full_adder_0/b1 VDD main-block_2/4_full_adder_0/full_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1097 VDD main-block_2/and_1/vout main-block_2/4_full_adder_0/full_adder_0/nand_2/va main-block_2/4_full_adder_0/full_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1098 main-block_2/4_full_adder_0/full_adder_0/nand_0/a_n5_n39# main-block_2/4_full_adder_0/b1 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1099 main-block_2/4_full_adder_0/full_adder_0/nand_2/va main-block_2/and_1/vout main-block_2/4_full_adder_0/full_adder_0/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1100 main-block_2/4_full_adder_0/full_adder_0/nand_7/va main-block_2/4_full_adder_0/full_adder_0/nand_4/va VDD main-block_2/4_full_adder_0/full_adder_0/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1101 VDD main-block_2/4_full_adder_0/full_adder_0/nand_6/va main-block_2/4_full_adder_0/full_adder_0/nand_7/va main-block_2/4_full_adder_0/full_adder_0/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1102 main-block_2/4_full_adder_0/full_adder_0/nand_5/a_n5_n39# main-block_2/4_full_adder_0/full_adder_0/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1103 main-block_2/4_full_adder_0/full_adder_0/nand_7/va main-block_2/4_full_adder_0/full_adder_0/nand_6/va main-block_2/4_full_adder_0/full_adder_0/nand_5/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1104 main-block_2/4_full_adder_0/full_adder_0/nand_3/va main-block_2/4_full_adder_0/b1 VDD main-block_2/4_full_adder_0/full_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1105 VDD main-block_2/4_full_adder_0/full_adder_0/nand_2/va main-block_2/4_full_adder_0/full_adder_0/nand_3/va main-block_2/4_full_adder_0/full_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1106 main-block_2/4_full_adder_0/full_adder_0/nand_1/a_n5_n39# main-block_2/4_full_adder_0/b1 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1107 main-block_2/4_full_adder_0/full_adder_0/nand_3/va main-block_2/4_full_adder_0/full_adder_0/nand_2/va main-block_2/4_full_adder_0/full_adder_0/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1108 main-block_2/4_full_adder_0/full_adder_0/c_in main-block_2/4_full_adder_0/half_adder_0/nand_2/va VDD main-block_2/4_full_adder_0/half_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1109 VDD main-block_2/4_full_adder_0/half_adder_0/nand_2/va main-block_2/4_full_adder_0/full_adder_0/c_in main-block_2/4_full_adder_0/half_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1110 main-block_2/4_full_adder_0/half_adder_0/nand_4/a_n5_n39# main-block_2/4_full_adder_0/half_adder_0/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1111 main-block_2/4_full_adder_0/full_adder_0/c_in main-block_2/4_full_adder_0/half_adder_0/nand_2/va main-block_2/4_full_adder_0/half_adder_0/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1112 main-block_2/4_full_adder_0/half_adder_0/nand_3/vb main-block_2/4_full_adder_0/half_adder_0/nand_2/va VDD main-block_2/4_full_adder_0/half_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1113 VDD main-block_2/and_0/vout main-block_2/4_full_adder_0/half_adder_0/nand_3/vb main-block_2/4_full_adder_0/half_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1114 main-block_2/4_full_adder_0/half_adder_0/nand_2/a_n5_n39# main-block_2/4_full_adder_0/half_adder_0/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1115 main-block_2/4_full_adder_0/half_adder_0/nand_3/vb main-block_2/and_0/vout main-block_2/4_full_adder_0/half_adder_0/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1116 p3 main-block_2/4_full_adder_0/half_adder_0/nand_3/va VDD main-block_2/4_full_adder_0/half_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1117 VDD main-block_2/4_full_adder_0/half_adder_0/nand_3/vb p3 main-block_2/4_full_adder_0/half_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1118 main-block_2/4_full_adder_0/half_adder_0/nand_3/a_n5_n39# main-block_2/4_full_adder_0/half_adder_0/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1119 p3 main-block_2/4_full_adder_0/half_adder_0/nand_3/vb main-block_2/4_full_adder_0/half_adder_0/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1120 main-block_2/4_full_adder_0/half_adder_0/nand_2/va main-block_2/4_full_adder_0/b0 VDD main-block_2/4_full_adder_0/half_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1121 VDD main-block_2/and_0/vout main-block_2/4_full_adder_0/half_adder_0/nand_2/va main-block_2/4_full_adder_0/half_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1122 main-block_2/4_full_adder_0/half_adder_0/nand_0/a_n5_n39# main-block_2/4_full_adder_0/b0 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1123 main-block_2/4_full_adder_0/half_adder_0/nand_2/va main-block_2/and_0/vout main-block_2/4_full_adder_0/half_adder_0/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1124 main-block_2/4_full_adder_0/half_adder_0/nand_3/va main-block_2/4_full_adder_0/b0 VDD main-block_2/4_full_adder_0/half_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1125 VDD main-block_2/4_full_adder_0/half_adder_0/nand_2/va main-block_2/4_full_adder_0/half_adder_0/nand_3/va main-block_2/4_full_adder_0/half_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1126 main-block_2/4_full_adder_0/half_adder_0/nand_1/a_n5_n39# main-block_2/4_full_adder_0/b0 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1127 main-block_2/4_full_adder_0/half_adder_0/nand_3/va main-block_2/4_full_adder_0/half_adder_0/nand_2/va main-block_2/4_full_adder_0/half_adder_0/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1128 main-block_2/and_3/vout main-block_2/and_3/nand_1/va VDD main-block_2/and_3/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1129 VDD main-block_2/and_3/nand_1/va main-block_2/and_3/vout main-block_2/and_3/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1130 main-block_2/and_3/nand_1/a_n5_n39# main-block_2/and_3/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1131 main-block_2/and_3/vout main-block_2/and_3/nand_1/va main-block_2/and_3/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1132 main-block_2/and_3/nand_1/va a3 VDD main-block_2/and_3/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1133 VDD b3 main-block_2/and_3/nand_1/va main-block_2/and_3/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1134 main-block_2/and_3/nand_0/a_n5_n39# a3 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1135 main-block_2/and_3/nand_1/va b3 main-block_2/and_3/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1136 main-block_2/and_2/vout main-block_2/and_2/nand_1/va VDD main-block_2/and_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1137 VDD main-block_2/and_2/nand_1/va main-block_2/and_2/vout main-block_2/and_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1138 main-block_2/and_2/nand_1/a_n5_n39# main-block_2/and_2/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1139 main-block_2/and_2/vout main-block_2/and_2/nand_1/va main-block_2/and_2/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1140 main-block_2/and_2/nand_1/va a2 VDD main-block_2/and_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1141 VDD b3 main-block_2/and_2/nand_1/va main-block_2/and_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1142 main-block_2/and_2/nand_0/a_n5_n39# a2 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1143 main-block_2/and_2/nand_1/va b3 main-block_2/and_2/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1144 main-block_2/and_1/vout main-block_2/and_1/nand_1/va VDD main-block_2/and_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1145 VDD main-block_2/and_1/nand_1/va main-block_2/and_1/vout main-block_2/and_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1146 main-block_2/and_1/nand_1/a_n5_n39# main-block_2/and_1/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1147 main-block_2/and_1/vout main-block_2/and_1/nand_1/va main-block_2/and_1/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1148 main-block_2/and_1/nand_1/va a1 VDD main-block_2/and_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1149 VDD b3 main-block_2/and_1/nand_1/va main-block_2/and_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1150 main-block_2/and_1/nand_0/a_n5_n39# a1 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1151 main-block_2/and_1/nand_1/va b3 main-block_2/and_1/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1152 main-block_2/and_0/vout main-block_2/and_0/nand_1/va VDD main-block_2/and_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1153 VDD main-block_2/and_0/nand_1/va main-block_2/and_0/vout main-block_2/and_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1154 main-block_2/and_0/nand_1/a_n5_n39# main-block_2/and_0/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1155 main-block_2/and_0/vout main-block_2/and_0/nand_1/va main-block_2/and_0/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1156 main-block_2/and_0/nand_1/va a0 VDD main-block_2/and_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1157 VDD b3 main-block_2/and_0/nand_1/va main-block_2/and_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1158 main-block_2/and_0/nand_0/a_n5_n39# a0 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1159 main-block_2/and_0/nand_1/va b3 main-block_2/and_0/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1160 main-block_2/4_full_adder_0/b3 main-block_1/4_full_adder_0/full_adder_2/nand_6/va VDD main-block_1/4_full_adder_0/full_adder_2/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1161 VDD main-block_1/4_full_adder_0/full_adder_2/nand_2/va main-block_2/4_full_adder_0/b3 main-block_1/4_full_adder_0/full_adder_2/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1162 main-block_1/4_full_adder_0/full_adder_2/nand_8/a_n5_n39# main-block_1/4_full_adder_0/full_adder_2/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1163 main-block_2/4_full_adder_0/b3 main-block_1/4_full_adder_0/full_adder_2/nand_2/va main-block_1/4_full_adder_0/full_adder_2/nand_8/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1164 main-block_1/4_full_adder_0/full_adder_2/nand_7/vb main-block_1/4_full_adder_0/full_adder_2/nand_6/va VDD main-block_1/4_full_adder_0/full_adder_2/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1165 VDD main-block_1/4_full_adder_0/full_adder_2/c_in main-block_1/4_full_adder_0/full_adder_2/nand_7/vb main-block_1/4_full_adder_0/full_adder_2/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1166 main-block_1/4_full_adder_0/full_adder_2/nand_6/a_n5_n39# main-block_1/4_full_adder_0/full_adder_2/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1167 main-block_1/4_full_adder_0/full_adder_2/nand_7/vb main-block_1/4_full_adder_0/full_adder_2/c_in main-block_1/4_full_adder_0/full_adder_2/nand_6/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1168 main-block_1/4_full_adder_0/full_adder_2/nand_3/vb main-block_1/4_full_adder_0/full_adder_2/nand_2/va VDD main-block_1/4_full_adder_0/full_adder_2/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1169 VDD main-block_1/and_3/vout main-block_1/4_full_adder_0/full_adder_2/nand_3/vb main-block_1/4_full_adder_0/full_adder_2/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1170 main-block_1/4_full_adder_0/full_adder_2/nand_2/a_n5_n39# main-block_1/4_full_adder_0/full_adder_2/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1171 main-block_1/4_full_adder_0/full_adder_2/nand_3/vb main-block_1/and_3/vout main-block_1/4_full_adder_0/full_adder_2/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1172 main-block_2/4_full_adder_0/b2 main-block_1/4_full_adder_0/full_adder_2/nand_7/va VDD main-block_1/4_full_adder_0/full_adder_2/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1173 VDD main-block_1/4_full_adder_0/full_adder_2/nand_7/vb main-block_2/4_full_adder_0/b2 main-block_1/4_full_adder_0/full_adder_2/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1174 main-block_1/4_full_adder_0/full_adder_2/nand_7/a_n5_n39# main-block_1/4_full_adder_0/full_adder_2/nand_7/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1175 main-block_2/4_full_adder_0/b2 main-block_1/4_full_adder_0/full_adder_2/nand_7/vb main-block_1/4_full_adder_0/full_adder_2/nand_7/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1176 main-block_1/4_full_adder_0/full_adder_2/nand_6/va main-block_1/4_full_adder_0/full_adder_2/nand_4/va VDD main-block_1/4_full_adder_0/full_adder_2/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1177 VDD main-block_1/4_full_adder_0/full_adder_2/c_in main-block_1/4_full_adder_0/full_adder_2/nand_6/va main-block_1/4_full_adder_0/full_adder_2/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1178 main-block_1/4_full_adder_0/full_adder_2/nand_4/a_n5_n39# main-block_1/4_full_adder_0/full_adder_2/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1179 main-block_1/4_full_adder_0/full_adder_2/nand_6/va main-block_1/4_full_adder_0/full_adder_2/c_in main-block_1/4_full_adder_0/full_adder_2/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1180 main-block_1/4_full_adder_0/full_adder_2/nand_4/va main-block_1/4_full_adder_0/full_adder_2/nand_3/va VDD main-block_1/4_full_adder_0/full_adder_2/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1181 VDD main-block_1/4_full_adder_0/full_adder_2/nand_3/vb main-block_1/4_full_adder_0/full_adder_2/nand_4/va main-block_1/4_full_adder_0/full_adder_2/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1182 main-block_1/4_full_adder_0/full_adder_2/nand_3/a_n5_n39# main-block_1/4_full_adder_0/full_adder_2/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1183 main-block_1/4_full_adder_0/full_adder_2/nand_4/va main-block_1/4_full_adder_0/full_adder_2/nand_3/vb main-block_1/4_full_adder_0/full_adder_2/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1184 main-block_1/4_full_adder_0/full_adder_2/nand_2/va main-block_1/4_full_adder_0/b3 VDD main-block_1/4_full_adder_0/full_adder_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1185 VDD main-block_1/and_3/vout main-block_1/4_full_adder_0/full_adder_2/nand_2/va main-block_1/4_full_adder_0/full_adder_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1186 main-block_1/4_full_adder_0/full_adder_2/nand_0/a_n5_n39# main-block_1/4_full_adder_0/b3 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1187 main-block_1/4_full_adder_0/full_adder_2/nand_2/va main-block_1/and_3/vout main-block_1/4_full_adder_0/full_adder_2/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1188 main-block_1/4_full_adder_0/full_adder_2/nand_7/va main-block_1/4_full_adder_0/full_adder_2/nand_4/va VDD main-block_1/4_full_adder_0/full_adder_2/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1189 VDD main-block_1/4_full_adder_0/full_adder_2/nand_6/va main-block_1/4_full_adder_0/full_adder_2/nand_7/va main-block_1/4_full_adder_0/full_adder_2/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1190 main-block_1/4_full_adder_0/full_adder_2/nand_5/a_n5_n39# main-block_1/4_full_adder_0/full_adder_2/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1191 main-block_1/4_full_adder_0/full_adder_2/nand_7/va main-block_1/4_full_adder_0/full_adder_2/nand_6/va main-block_1/4_full_adder_0/full_adder_2/nand_5/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1192 main-block_1/4_full_adder_0/full_adder_2/nand_3/va main-block_1/4_full_adder_0/b3 VDD main-block_1/4_full_adder_0/full_adder_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1193 VDD main-block_1/4_full_adder_0/full_adder_2/nand_2/va main-block_1/4_full_adder_0/full_adder_2/nand_3/va main-block_1/4_full_adder_0/full_adder_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1194 main-block_1/4_full_adder_0/full_adder_2/nand_1/a_n5_n39# main-block_1/4_full_adder_0/b3 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1195 main-block_1/4_full_adder_0/full_adder_2/nand_3/va main-block_1/4_full_adder_0/full_adder_2/nand_2/va main-block_1/4_full_adder_0/full_adder_2/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1196 main-block_1/4_full_adder_0/full_adder_2/c_in main-block_1/4_full_adder_0/full_adder_1/nand_6/va VDD main-block_1/4_full_adder_0/full_adder_1/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1197 VDD main-block_1/4_full_adder_0/full_adder_1/nand_2/va main-block_1/4_full_adder_0/full_adder_2/c_in main-block_1/4_full_adder_0/full_adder_1/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1198 main-block_1/4_full_adder_0/full_adder_1/nand_8/a_n5_n39# main-block_1/4_full_adder_0/full_adder_1/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1199 main-block_1/4_full_adder_0/full_adder_2/c_in main-block_1/4_full_adder_0/full_adder_1/nand_2/va main-block_1/4_full_adder_0/full_adder_1/nand_8/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1200 main-block_1/4_full_adder_0/full_adder_1/nand_7/vb main-block_1/4_full_adder_0/full_adder_1/nand_6/va VDD main-block_1/4_full_adder_0/full_adder_1/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1201 VDD main-block_1/4_full_adder_0/full_adder_1/c_in main-block_1/4_full_adder_0/full_adder_1/nand_7/vb main-block_1/4_full_adder_0/full_adder_1/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1202 main-block_1/4_full_adder_0/full_adder_1/nand_6/a_n5_n39# main-block_1/4_full_adder_0/full_adder_1/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1203 main-block_1/4_full_adder_0/full_adder_1/nand_7/vb main-block_1/4_full_adder_0/full_adder_1/c_in main-block_1/4_full_adder_0/full_adder_1/nand_6/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1204 main-block_1/4_full_adder_0/full_adder_1/nand_3/vb main-block_1/4_full_adder_0/full_adder_1/nand_2/va VDD main-block_1/4_full_adder_0/full_adder_1/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1205 VDD main-block_1/and_2/vout main-block_1/4_full_adder_0/full_adder_1/nand_3/vb main-block_1/4_full_adder_0/full_adder_1/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1206 main-block_1/4_full_adder_0/full_adder_1/nand_2/a_n5_n39# main-block_1/4_full_adder_0/full_adder_1/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1207 main-block_1/4_full_adder_0/full_adder_1/nand_3/vb main-block_1/and_2/vout main-block_1/4_full_adder_0/full_adder_1/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1208 main-block_2/4_full_adder_0/b1 main-block_1/4_full_adder_0/full_adder_1/nand_7/va VDD main-block_1/4_full_adder_0/full_adder_1/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1209 VDD main-block_1/4_full_adder_0/full_adder_1/nand_7/vb main-block_2/4_full_adder_0/b1 main-block_1/4_full_adder_0/full_adder_1/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1210 main-block_1/4_full_adder_0/full_adder_1/nand_7/a_n5_n39# main-block_1/4_full_adder_0/full_adder_1/nand_7/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1211 main-block_2/4_full_adder_0/b1 main-block_1/4_full_adder_0/full_adder_1/nand_7/vb main-block_1/4_full_adder_0/full_adder_1/nand_7/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1212 main-block_1/4_full_adder_0/full_adder_1/nand_6/va main-block_1/4_full_adder_0/full_adder_1/nand_4/va VDD main-block_1/4_full_adder_0/full_adder_1/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1213 VDD main-block_1/4_full_adder_0/full_adder_1/c_in main-block_1/4_full_adder_0/full_adder_1/nand_6/va main-block_1/4_full_adder_0/full_adder_1/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1214 main-block_1/4_full_adder_0/full_adder_1/nand_4/a_n5_n39# main-block_1/4_full_adder_0/full_adder_1/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1215 main-block_1/4_full_adder_0/full_adder_1/nand_6/va main-block_1/4_full_adder_0/full_adder_1/c_in main-block_1/4_full_adder_0/full_adder_1/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1216 main-block_1/4_full_adder_0/full_adder_1/nand_4/va main-block_1/4_full_adder_0/full_adder_1/nand_3/va VDD main-block_1/4_full_adder_0/full_adder_1/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1217 VDD main-block_1/4_full_adder_0/full_adder_1/nand_3/vb main-block_1/4_full_adder_0/full_adder_1/nand_4/va main-block_1/4_full_adder_0/full_adder_1/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1218 main-block_1/4_full_adder_0/full_adder_1/nand_3/a_n5_n39# main-block_1/4_full_adder_0/full_adder_1/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1219 main-block_1/4_full_adder_0/full_adder_1/nand_4/va main-block_1/4_full_adder_0/full_adder_1/nand_3/vb main-block_1/4_full_adder_0/full_adder_1/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1220 main-block_1/4_full_adder_0/full_adder_1/nand_2/va main-block_1/4_full_adder_0/b2 VDD main-block_1/4_full_adder_0/full_adder_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1221 VDD main-block_1/and_2/vout main-block_1/4_full_adder_0/full_adder_1/nand_2/va main-block_1/4_full_adder_0/full_adder_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1222 main-block_1/4_full_adder_0/full_adder_1/nand_0/a_n5_n39# main-block_1/4_full_adder_0/b2 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1223 main-block_1/4_full_adder_0/full_adder_1/nand_2/va main-block_1/and_2/vout main-block_1/4_full_adder_0/full_adder_1/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1224 main-block_1/4_full_adder_0/full_adder_1/nand_7/va main-block_1/4_full_adder_0/full_adder_1/nand_4/va VDD main-block_1/4_full_adder_0/full_adder_1/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1225 VDD main-block_1/4_full_adder_0/full_adder_1/nand_6/va main-block_1/4_full_adder_0/full_adder_1/nand_7/va main-block_1/4_full_adder_0/full_adder_1/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1226 main-block_1/4_full_adder_0/full_adder_1/nand_5/a_n5_n39# main-block_1/4_full_adder_0/full_adder_1/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1227 main-block_1/4_full_adder_0/full_adder_1/nand_7/va main-block_1/4_full_adder_0/full_adder_1/nand_6/va main-block_1/4_full_adder_0/full_adder_1/nand_5/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1228 main-block_1/4_full_adder_0/full_adder_1/nand_3/va main-block_1/4_full_adder_0/b2 VDD main-block_1/4_full_adder_0/full_adder_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1229 VDD main-block_1/4_full_adder_0/full_adder_1/nand_2/va main-block_1/4_full_adder_0/full_adder_1/nand_3/va main-block_1/4_full_adder_0/full_adder_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1230 main-block_1/4_full_adder_0/full_adder_1/nand_1/a_n5_n39# main-block_1/4_full_adder_0/b2 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1231 main-block_1/4_full_adder_0/full_adder_1/nand_3/va main-block_1/4_full_adder_0/full_adder_1/nand_2/va main-block_1/4_full_adder_0/full_adder_1/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1232 main-block_1/4_full_adder_0/full_adder_1/c_in main-block_1/4_full_adder_0/full_adder_0/nand_6/va VDD main-block_1/4_full_adder_0/full_adder_0/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1233 VDD main-block_1/4_full_adder_0/full_adder_0/nand_2/va main-block_1/4_full_adder_0/full_adder_1/c_in main-block_1/4_full_adder_0/full_adder_0/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1234 main-block_1/4_full_adder_0/full_adder_0/nand_8/a_n5_n39# main-block_1/4_full_adder_0/full_adder_0/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1235 main-block_1/4_full_adder_0/full_adder_1/c_in main-block_1/4_full_adder_0/full_adder_0/nand_2/va main-block_1/4_full_adder_0/full_adder_0/nand_8/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1236 main-block_1/4_full_adder_0/full_adder_0/nand_7/vb main-block_1/4_full_adder_0/full_adder_0/nand_6/va VDD main-block_1/4_full_adder_0/full_adder_0/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1237 VDD main-block_1/4_full_adder_0/full_adder_0/c_in main-block_1/4_full_adder_0/full_adder_0/nand_7/vb main-block_1/4_full_adder_0/full_adder_0/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1238 main-block_1/4_full_adder_0/full_adder_0/nand_6/a_n5_n39# main-block_1/4_full_adder_0/full_adder_0/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1239 main-block_1/4_full_adder_0/full_adder_0/nand_7/vb main-block_1/4_full_adder_0/full_adder_0/c_in main-block_1/4_full_adder_0/full_adder_0/nand_6/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1240 main-block_1/4_full_adder_0/full_adder_0/nand_3/vb main-block_1/4_full_adder_0/full_adder_0/nand_2/va VDD main-block_1/4_full_adder_0/full_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1241 VDD main-block_1/and_1/vout main-block_1/4_full_adder_0/full_adder_0/nand_3/vb main-block_1/4_full_adder_0/full_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1242 main-block_1/4_full_adder_0/full_adder_0/nand_2/a_n5_n39# main-block_1/4_full_adder_0/full_adder_0/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1243 main-block_1/4_full_adder_0/full_adder_0/nand_3/vb main-block_1/and_1/vout main-block_1/4_full_adder_0/full_adder_0/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1244 main-block_2/4_full_adder_0/b0 main-block_1/4_full_adder_0/full_adder_0/nand_7/va VDD main-block_1/4_full_adder_0/full_adder_0/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1245 VDD main-block_1/4_full_adder_0/full_adder_0/nand_7/vb main-block_2/4_full_adder_0/b0 main-block_1/4_full_adder_0/full_adder_0/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1246 main-block_1/4_full_adder_0/full_adder_0/nand_7/a_n5_n39# main-block_1/4_full_adder_0/full_adder_0/nand_7/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1247 main-block_2/4_full_adder_0/b0 main-block_1/4_full_adder_0/full_adder_0/nand_7/vb main-block_1/4_full_adder_0/full_adder_0/nand_7/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1248 main-block_1/4_full_adder_0/full_adder_0/nand_6/va main-block_1/4_full_adder_0/full_adder_0/nand_4/va VDD main-block_1/4_full_adder_0/full_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1249 VDD main-block_1/4_full_adder_0/full_adder_0/c_in main-block_1/4_full_adder_0/full_adder_0/nand_6/va main-block_1/4_full_adder_0/full_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1250 main-block_1/4_full_adder_0/full_adder_0/nand_4/a_n5_n39# main-block_1/4_full_adder_0/full_adder_0/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1251 main-block_1/4_full_adder_0/full_adder_0/nand_6/va main-block_1/4_full_adder_0/full_adder_0/c_in main-block_1/4_full_adder_0/full_adder_0/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1252 main-block_1/4_full_adder_0/full_adder_0/nand_4/va main-block_1/4_full_adder_0/full_adder_0/nand_3/va VDD main-block_1/4_full_adder_0/full_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1253 VDD main-block_1/4_full_adder_0/full_adder_0/nand_3/vb main-block_1/4_full_adder_0/full_adder_0/nand_4/va main-block_1/4_full_adder_0/full_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1254 main-block_1/4_full_adder_0/full_adder_0/nand_3/a_n5_n39# main-block_1/4_full_adder_0/full_adder_0/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1255 main-block_1/4_full_adder_0/full_adder_0/nand_4/va main-block_1/4_full_adder_0/full_adder_0/nand_3/vb main-block_1/4_full_adder_0/full_adder_0/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1256 main-block_1/4_full_adder_0/full_adder_0/nand_2/va main-block_1/4_full_adder_0/b1 VDD main-block_1/4_full_adder_0/full_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1257 VDD main-block_1/and_1/vout main-block_1/4_full_adder_0/full_adder_0/nand_2/va main-block_1/4_full_adder_0/full_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1258 main-block_1/4_full_adder_0/full_adder_0/nand_0/a_n5_n39# main-block_1/4_full_adder_0/b1 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1259 main-block_1/4_full_adder_0/full_adder_0/nand_2/va main-block_1/and_1/vout main-block_1/4_full_adder_0/full_adder_0/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1260 main-block_1/4_full_adder_0/full_adder_0/nand_7/va main-block_1/4_full_adder_0/full_adder_0/nand_4/va VDD main-block_1/4_full_adder_0/full_adder_0/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1261 VDD main-block_1/4_full_adder_0/full_adder_0/nand_6/va main-block_1/4_full_adder_0/full_adder_0/nand_7/va main-block_1/4_full_adder_0/full_adder_0/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1262 main-block_1/4_full_adder_0/full_adder_0/nand_5/a_n5_n39# main-block_1/4_full_adder_0/full_adder_0/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1263 main-block_1/4_full_adder_0/full_adder_0/nand_7/va main-block_1/4_full_adder_0/full_adder_0/nand_6/va main-block_1/4_full_adder_0/full_adder_0/nand_5/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1264 main-block_1/4_full_adder_0/full_adder_0/nand_3/va main-block_1/4_full_adder_0/b1 VDD main-block_1/4_full_adder_0/full_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1265 VDD main-block_1/4_full_adder_0/full_adder_0/nand_2/va main-block_1/4_full_adder_0/full_adder_0/nand_3/va main-block_1/4_full_adder_0/full_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1266 main-block_1/4_full_adder_0/full_adder_0/nand_1/a_n5_n39# main-block_1/4_full_adder_0/b1 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1267 main-block_1/4_full_adder_0/full_adder_0/nand_3/va main-block_1/4_full_adder_0/full_adder_0/nand_2/va main-block_1/4_full_adder_0/full_adder_0/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1268 main-block_1/4_full_adder_0/full_adder_0/c_in main-block_1/4_full_adder_0/half_adder_0/nand_2/va VDD main-block_1/4_full_adder_0/half_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1269 VDD main-block_1/4_full_adder_0/half_adder_0/nand_2/va main-block_1/4_full_adder_0/full_adder_0/c_in main-block_1/4_full_adder_0/half_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1270 main-block_1/4_full_adder_0/half_adder_0/nand_4/a_n5_n39# main-block_1/4_full_adder_0/half_adder_0/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1271 main-block_1/4_full_adder_0/full_adder_0/c_in main-block_1/4_full_adder_0/half_adder_0/nand_2/va main-block_1/4_full_adder_0/half_adder_0/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1272 main-block_1/4_full_adder_0/half_adder_0/nand_3/vb main-block_1/4_full_adder_0/half_adder_0/nand_2/va VDD main-block_1/4_full_adder_0/half_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1273 VDD main-block_1/and_0/vout main-block_1/4_full_adder_0/half_adder_0/nand_3/vb main-block_1/4_full_adder_0/half_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1274 main-block_1/4_full_adder_0/half_adder_0/nand_2/a_n5_n39# main-block_1/4_full_adder_0/half_adder_0/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1275 main-block_1/4_full_adder_0/half_adder_0/nand_3/vb main-block_1/and_0/vout main-block_1/4_full_adder_0/half_adder_0/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1276 p2 main-block_1/4_full_adder_0/half_adder_0/nand_3/va VDD main-block_1/4_full_adder_0/half_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1277 VDD main-block_1/4_full_adder_0/half_adder_0/nand_3/vb p2 main-block_1/4_full_adder_0/half_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1278 main-block_1/4_full_adder_0/half_adder_0/nand_3/a_n5_n39# main-block_1/4_full_adder_0/half_adder_0/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1279 p2 main-block_1/4_full_adder_0/half_adder_0/nand_3/vb main-block_1/4_full_adder_0/half_adder_0/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1280 main-block_1/4_full_adder_0/half_adder_0/nand_2/va main-block_1/4_full_adder_0/b0 VDD main-block_1/4_full_adder_0/half_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1281 VDD main-block_1/and_0/vout main-block_1/4_full_adder_0/half_adder_0/nand_2/va main-block_1/4_full_adder_0/half_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1282 main-block_1/4_full_adder_0/half_adder_0/nand_0/a_n5_n39# main-block_1/4_full_adder_0/b0 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1283 main-block_1/4_full_adder_0/half_adder_0/nand_2/va main-block_1/and_0/vout main-block_1/4_full_adder_0/half_adder_0/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1284 main-block_1/4_full_adder_0/half_adder_0/nand_3/va main-block_1/4_full_adder_0/b0 VDD main-block_1/4_full_adder_0/half_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1285 VDD main-block_1/4_full_adder_0/half_adder_0/nand_2/va main-block_1/4_full_adder_0/half_adder_0/nand_3/va main-block_1/4_full_adder_0/half_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1286 main-block_1/4_full_adder_0/half_adder_0/nand_1/a_n5_n39# main-block_1/4_full_adder_0/b0 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1287 main-block_1/4_full_adder_0/half_adder_0/nand_3/va main-block_1/4_full_adder_0/half_adder_0/nand_2/va main-block_1/4_full_adder_0/half_adder_0/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1288 main-block_1/and_3/vout main-block_1/and_3/nand_1/va VDD main-block_1/and_3/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1289 VDD main-block_1/and_3/nand_1/va main-block_1/and_3/vout main-block_1/and_3/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1290 main-block_1/and_3/nand_1/a_n5_n39# main-block_1/and_3/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1291 main-block_1/and_3/vout main-block_1/and_3/nand_1/va main-block_1/and_3/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1292 main-block_1/and_3/nand_1/va a3 VDD main-block_1/and_3/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1293 VDD b2 main-block_1/and_3/nand_1/va main-block_1/and_3/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1294 main-block_1/and_3/nand_0/a_n5_n39# a3 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1295 main-block_1/and_3/nand_1/va b2 main-block_1/and_3/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1296 main-block_1/and_2/vout main-block_1/and_2/nand_1/va VDD main-block_1/and_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1297 VDD main-block_1/and_2/nand_1/va main-block_1/and_2/vout main-block_1/and_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1298 main-block_1/and_2/nand_1/a_n5_n39# main-block_1/and_2/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1299 main-block_1/and_2/vout main-block_1/and_2/nand_1/va main-block_1/and_2/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1300 main-block_1/and_2/nand_1/va a2 VDD main-block_1/and_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1301 VDD b2 main-block_1/and_2/nand_1/va main-block_1/and_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1302 main-block_1/and_2/nand_0/a_n5_n39# a2 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1303 main-block_1/and_2/nand_1/va b2 main-block_1/and_2/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1304 main-block_1/and_1/vout main-block_1/and_1/nand_1/va VDD main-block_1/and_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1305 VDD main-block_1/and_1/nand_1/va main-block_1/and_1/vout main-block_1/and_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1306 main-block_1/and_1/nand_1/a_n5_n39# main-block_1/and_1/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1307 main-block_1/and_1/vout main-block_1/and_1/nand_1/va main-block_1/and_1/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1308 main-block_1/and_1/nand_1/va a1 VDD main-block_1/and_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1309 VDD b2 main-block_1/and_1/nand_1/va main-block_1/and_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1310 main-block_1/and_1/nand_0/a_n5_n39# a1 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1311 main-block_1/and_1/nand_1/va b2 main-block_1/and_1/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1312 main-block_1/and_0/vout main-block_1/and_0/nand_1/va VDD main-block_1/and_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1313 VDD main-block_1/and_0/nand_1/va main-block_1/and_0/vout main-block_1/and_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1314 main-block_1/and_0/nand_1/a_n5_n39# main-block_1/and_0/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1315 main-block_1/and_0/vout main-block_1/and_0/nand_1/va main-block_1/and_0/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1316 main-block_1/and_0/nand_1/va a0 VDD main-block_1/and_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1317 VDD b2 main-block_1/and_0/nand_1/va main-block_1/and_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1318 main-block_1/and_0/nand_0/a_n5_n39# a0 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1319 main-block_1/and_0/nand_1/va b2 main-block_1/and_0/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1320 main-block_1/4_full_adder_0/b3 main-block_0/4_full_adder_0/full_adder_2/nand_6/va VDD main-block_0/4_full_adder_0/full_adder_2/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1321 VDD main-block_0/4_full_adder_0/full_adder_2/nand_2/va main-block_1/4_full_adder_0/b3 main-block_0/4_full_adder_0/full_adder_2/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1322 main-block_0/4_full_adder_0/full_adder_2/nand_8/a_n5_n39# main-block_0/4_full_adder_0/full_adder_2/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1323 main-block_1/4_full_adder_0/b3 main-block_0/4_full_adder_0/full_adder_2/nand_2/va main-block_0/4_full_adder_0/full_adder_2/nand_8/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1324 main-block_0/4_full_adder_0/full_adder_2/nand_7/vb main-block_0/4_full_adder_0/full_adder_2/nand_6/va VDD main-block_0/4_full_adder_0/full_adder_2/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1325 VDD main-block_0/4_full_adder_0/full_adder_2/c_in main-block_0/4_full_adder_0/full_adder_2/nand_7/vb main-block_0/4_full_adder_0/full_adder_2/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1326 main-block_0/4_full_adder_0/full_adder_2/nand_6/a_n5_n39# main-block_0/4_full_adder_0/full_adder_2/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1327 main-block_0/4_full_adder_0/full_adder_2/nand_7/vb main-block_0/4_full_adder_0/full_adder_2/c_in main-block_0/4_full_adder_0/full_adder_2/nand_6/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1328 main-block_0/4_full_adder_0/full_adder_2/nand_3/vb main-block_0/4_full_adder_0/full_adder_2/nand_2/va VDD main-block_0/4_full_adder_0/full_adder_2/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1329 VDD main-block_0/and_3/vout main-block_0/4_full_adder_0/full_adder_2/nand_3/vb main-block_0/4_full_adder_0/full_adder_2/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1330 main-block_0/4_full_adder_0/full_adder_2/nand_2/a_n5_n39# main-block_0/4_full_adder_0/full_adder_2/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1331 main-block_0/4_full_adder_0/full_adder_2/nand_3/vb main-block_0/and_3/vout main-block_0/4_full_adder_0/full_adder_2/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1332 main-block_1/4_full_adder_0/b2 main-block_0/4_full_adder_0/full_adder_2/nand_7/va VDD main-block_0/4_full_adder_0/full_adder_2/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1333 VDD main-block_0/4_full_adder_0/full_adder_2/nand_7/vb main-block_1/4_full_adder_0/b2 main-block_0/4_full_adder_0/full_adder_2/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1334 main-block_0/4_full_adder_0/full_adder_2/nand_7/a_n5_n39# main-block_0/4_full_adder_0/full_adder_2/nand_7/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1335 main-block_1/4_full_adder_0/b2 main-block_0/4_full_adder_0/full_adder_2/nand_7/vb main-block_0/4_full_adder_0/full_adder_2/nand_7/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1336 main-block_0/4_full_adder_0/full_adder_2/nand_6/va main-block_0/4_full_adder_0/full_adder_2/nand_4/va VDD main-block_0/4_full_adder_0/full_adder_2/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1337 VDD main-block_0/4_full_adder_0/full_adder_2/c_in main-block_0/4_full_adder_0/full_adder_2/nand_6/va main-block_0/4_full_adder_0/full_adder_2/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1338 main-block_0/4_full_adder_0/full_adder_2/nand_4/a_n5_n39# main-block_0/4_full_adder_0/full_adder_2/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1339 main-block_0/4_full_adder_0/full_adder_2/nand_6/va main-block_0/4_full_adder_0/full_adder_2/c_in main-block_0/4_full_adder_0/full_adder_2/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1340 main-block_0/4_full_adder_0/full_adder_2/nand_4/va main-block_0/4_full_adder_0/full_adder_2/nand_3/va VDD main-block_0/4_full_adder_0/full_adder_2/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1341 VDD main-block_0/4_full_adder_0/full_adder_2/nand_3/vb main-block_0/4_full_adder_0/full_adder_2/nand_4/va main-block_0/4_full_adder_0/full_adder_2/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1342 main-block_0/4_full_adder_0/full_adder_2/nand_3/a_n5_n39# main-block_0/4_full_adder_0/full_adder_2/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1343 main-block_0/4_full_adder_0/full_adder_2/nand_4/va main-block_0/4_full_adder_0/full_adder_2/nand_3/vb main-block_0/4_full_adder_0/full_adder_2/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1344 main-block_0/4_full_adder_0/full_adder_2/nand_2/va zero VDD main-block_0/4_full_adder_0/full_adder_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1345 VDD main-block_0/and_3/vout main-block_0/4_full_adder_0/full_adder_2/nand_2/va main-block_0/4_full_adder_0/full_adder_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1346 main-block_0/4_full_adder_0/full_adder_2/nand_0/a_n5_n39# zero GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1347 main-block_0/4_full_adder_0/full_adder_2/nand_2/va main-block_0/and_3/vout main-block_0/4_full_adder_0/full_adder_2/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1348 main-block_0/4_full_adder_0/full_adder_2/nand_7/va main-block_0/4_full_adder_0/full_adder_2/nand_4/va VDD main-block_0/4_full_adder_0/full_adder_2/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1349 VDD main-block_0/4_full_adder_0/full_adder_2/nand_6/va main-block_0/4_full_adder_0/full_adder_2/nand_7/va main-block_0/4_full_adder_0/full_adder_2/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1350 main-block_0/4_full_adder_0/full_adder_2/nand_5/a_n5_n39# main-block_0/4_full_adder_0/full_adder_2/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1351 main-block_0/4_full_adder_0/full_adder_2/nand_7/va main-block_0/4_full_adder_0/full_adder_2/nand_6/va main-block_0/4_full_adder_0/full_adder_2/nand_5/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1352 main-block_0/4_full_adder_0/full_adder_2/nand_3/va zero VDD main-block_0/4_full_adder_0/full_adder_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1353 VDD main-block_0/4_full_adder_0/full_adder_2/nand_2/va main-block_0/4_full_adder_0/full_adder_2/nand_3/va main-block_0/4_full_adder_0/full_adder_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1354 main-block_0/4_full_adder_0/full_adder_2/nand_1/a_n5_n39# zero GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1355 main-block_0/4_full_adder_0/full_adder_2/nand_3/va main-block_0/4_full_adder_0/full_adder_2/nand_2/va main-block_0/4_full_adder_0/full_adder_2/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1356 main-block_0/4_full_adder_0/full_adder_2/c_in main-block_0/4_full_adder_0/full_adder_1/nand_6/va VDD main-block_0/4_full_adder_0/full_adder_1/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1357 VDD main-block_0/4_full_adder_0/full_adder_1/nand_2/va main-block_0/4_full_adder_0/full_adder_2/c_in main-block_0/4_full_adder_0/full_adder_1/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1358 main-block_0/4_full_adder_0/full_adder_1/nand_8/a_n5_n39# main-block_0/4_full_adder_0/full_adder_1/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1359 main-block_0/4_full_adder_0/full_adder_2/c_in main-block_0/4_full_adder_0/full_adder_1/nand_2/va main-block_0/4_full_adder_0/full_adder_1/nand_8/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1360 main-block_0/4_full_adder_0/full_adder_1/nand_7/vb main-block_0/4_full_adder_0/full_adder_1/nand_6/va VDD main-block_0/4_full_adder_0/full_adder_1/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1361 VDD main-block_0/4_full_adder_0/full_adder_1/c_in main-block_0/4_full_adder_0/full_adder_1/nand_7/vb main-block_0/4_full_adder_0/full_adder_1/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1362 main-block_0/4_full_adder_0/full_adder_1/nand_6/a_n5_n39# main-block_0/4_full_adder_0/full_adder_1/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1363 main-block_0/4_full_adder_0/full_adder_1/nand_7/vb main-block_0/4_full_adder_0/full_adder_1/c_in main-block_0/4_full_adder_0/full_adder_1/nand_6/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1364 main-block_0/4_full_adder_0/full_adder_1/nand_3/vb main-block_0/4_full_adder_0/full_adder_1/nand_2/va VDD main-block_0/4_full_adder_0/full_adder_1/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1365 VDD main-block_0/and_2/vout main-block_0/4_full_adder_0/full_adder_1/nand_3/vb main-block_0/4_full_adder_0/full_adder_1/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1366 main-block_0/4_full_adder_0/full_adder_1/nand_2/a_n5_n39# main-block_0/4_full_adder_0/full_adder_1/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1367 main-block_0/4_full_adder_0/full_adder_1/nand_3/vb main-block_0/and_2/vout main-block_0/4_full_adder_0/full_adder_1/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1368 main-block_1/4_full_adder_0/b1 main-block_0/4_full_adder_0/full_adder_1/nand_7/va VDD main-block_0/4_full_adder_0/full_adder_1/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1369 VDD main-block_0/4_full_adder_0/full_adder_1/nand_7/vb main-block_1/4_full_adder_0/b1 main-block_0/4_full_adder_0/full_adder_1/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1370 main-block_0/4_full_adder_0/full_adder_1/nand_7/a_n5_n39# main-block_0/4_full_adder_0/full_adder_1/nand_7/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1371 main-block_1/4_full_adder_0/b1 main-block_0/4_full_adder_0/full_adder_1/nand_7/vb main-block_0/4_full_adder_0/full_adder_1/nand_7/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1372 main-block_0/4_full_adder_0/full_adder_1/nand_6/va main-block_0/4_full_adder_0/full_adder_1/nand_4/va VDD main-block_0/4_full_adder_0/full_adder_1/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1373 VDD main-block_0/4_full_adder_0/full_adder_1/c_in main-block_0/4_full_adder_0/full_adder_1/nand_6/va main-block_0/4_full_adder_0/full_adder_1/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1374 main-block_0/4_full_adder_0/full_adder_1/nand_4/a_n5_n39# main-block_0/4_full_adder_0/full_adder_1/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1375 main-block_0/4_full_adder_0/full_adder_1/nand_6/va main-block_0/4_full_adder_0/full_adder_1/c_in main-block_0/4_full_adder_0/full_adder_1/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1376 main-block_0/4_full_adder_0/full_adder_1/nand_4/va main-block_0/4_full_adder_0/full_adder_1/nand_3/va VDD main-block_0/4_full_adder_0/full_adder_1/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1377 VDD main-block_0/4_full_adder_0/full_adder_1/nand_3/vb main-block_0/4_full_adder_0/full_adder_1/nand_4/va main-block_0/4_full_adder_0/full_adder_1/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1378 main-block_0/4_full_adder_0/full_adder_1/nand_3/a_n5_n39# main-block_0/4_full_adder_0/full_adder_1/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1379 main-block_0/4_full_adder_0/full_adder_1/nand_4/va main-block_0/4_full_adder_0/full_adder_1/nand_3/vb main-block_0/4_full_adder_0/full_adder_1/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1380 main-block_0/4_full_adder_0/full_adder_1/nand_2/va and_3/vout VDD main-block_0/4_full_adder_0/full_adder_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1381 VDD main-block_0/and_2/vout main-block_0/4_full_adder_0/full_adder_1/nand_2/va main-block_0/4_full_adder_0/full_adder_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1382 main-block_0/4_full_adder_0/full_adder_1/nand_0/a_n5_n39# and_3/vout GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1383 main-block_0/4_full_adder_0/full_adder_1/nand_2/va main-block_0/and_2/vout main-block_0/4_full_adder_0/full_adder_1/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1384 main-block_0/4_full_adder_0/full_adder_1/nand_7/va main-block_0/4_full_adder_0/full_adder_1/nand_4/va VDD main-block_0/4_full_adder_0/full_adder_1/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1385 VDD main-block_0/4_full_adder_0/full_adder_1/nand_6/va main-block_0/4_full_adder_0/full_adder_1/nand_7/va main-block_0/4_full_adder_0/full_adder_1/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1386 main-block_0/4_full_adder_0/full_adder_1/nand_5/a_n5_n39# main-block_0/4_full_adder_0/full_adder_1/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1387 main-block_0/4_full_adder_0/full_adder_1/nand_7/va main-block_0/4_full_adder_0/full_adder_1/nand_6/va main-block_0/4_full_adder_0/full_adder_1/nand_5/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1388 main-block_0/4_full_adder_0/full_adder_1/nand_3/va and_3/vout VDD main-block_0/4_full_adder_0/full_adder_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1389 VDD main-block_0/4_full_adder_0/full_adder_1/nand_2/va main-block_0/4_full_adder_0/full_adder_1/nand_3/va main-block_0/4_full_adder_0/full_adder_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1390 main-block_0/4_full_adder_0/full_adder_1/nand_1/a_n5_n39# and_3/vout GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1391 main-block_0/4_full_adder_0/full_adder_1/nand_3/va main-block_0/4_full_adder_0/full_adder_1/nand_2/va main-block_0/4_full_adder_0/full_adder_1/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1392 main-block_0/4_full_adder_0/full_adder_1/c_in main-block_0/4_full_adder_0/full_adder_0/nand_6/va VDD main-block_0/4_full_adder_0/full_adder_0/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1393 VDD main-block_0/4_full_adder_0/full_adder_0/nand_2/va main-block_0/4_full_adder_0/full_adder_1/c_in main-block_0/4_full_adder_0/full_adder_0/nand_8/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1394 main-block_0/4_full_adder_0/full_adder_0/nand_8/a_n5_n39# main-block_0/4_full_adder_0/full_adder_0/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1395 main-block_0/4_full_adder_0/full_adder_1/c_in main-block_0/4_full_adder_0/full_adder_0/nand_2/va main-block_0/4_full_adder_0/full_adder_0/nand_8/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1396 main-block_0/4_full_adder_0/full_adder_0/nand_7/vb main-block_0/4_full_adder_0/full_adder_0/nand_6/va VDD main-block_0/4_full_adder_0/full_adder_0/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1397 VDD main-block_0/4_full_adder_0/full_adder_0/c_in main-block_0/4_full_adder_0/full_adder_0/nand_7/vb main-block_0/4_full_adder_0/full_adder_0/nand_6/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1398 main-block_0/4_full_adder_0/full_adder_0/nand_6/a_n5_n39# main-block_0/4_full_adder_0/full_adder_0/nand_6/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1399 main-block_0/4_full_adder_0/full_adder_0/nand_7/vb main-block_0/4_full_adder_0/full_adder_0/c_in main-block_0/4_full_adder_0/full_adder_0/nand_6/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1400 main-block_0/4_full_adder_0/full_adder_0/nand_3/vb main-block_0/4_full_adder_0/full_adder_0/nand_2/va VDD main-block_0/4_full_adder_0/full_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1401 VDD main-block_0/and_1/vout main-block_0/4_full_adder_0/full_adder_0/nand_3/vb main-block_0/4_full_adder_0/full_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1402 main-block_0/4_full_adder_0/full_adder_0/nand_2/a_n5_n39# main-block_0/4_full_adder_0/full_adder_0/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1403 main-block_0/4_full_adder_0/full_adder_0/nand_3/vb main-block_0/and_1/vout main-block_0/4_full_adder_0/full_adder_0/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1404 main-block_1/4_full_adder_0/b0 main-block_0/4_full_adder_0/full_adder_0/nand_7/va VDD main-block_0/4_full_adder_0/full_adder_0/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1405 VDD main-block_0/4_full_adder_0/full_adder_0/nand_7/vb main-block_1/4_full_adder_0/b0 main-block_0/4_full_adder_0/full_adder_0/nand_7/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1406 main-block_0/4_full_adder_0/full_adder_0/nand_7/a_n5_n39# main-block_0/4_full_adder_0/full_adder_0/nand_7/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1407 main-block_1/4_full_adder_0/b0 main-block_0/4_full_adder_0/full_adder_0/nand_7/vb main-block_0/4_full_adder_0/full_adder_0/nand_7/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1408 main-block_0/4_full_adder_0/full_adder_0/nand_6/va main-block_0/4_full_adder_0/full_adder_0/nand_4/va VDD main-block_0/4_full_adder_0/full_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1409 VDD main-block_0/4_full_adder_0/full_adder_0/c_in main-block_0/4_full_adder_0/full_adder_0/nand_6/va main-block_0/4_full_adder_0/full_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1410 main-block_0/4_full_adder_0/full_adder_0/nand_4/a_n5_n39# main-block_0/4_full_adder_0/full_adder_0/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1411 main-block_0/4_full_adder_0/full_adder_0/nand_6/va main-block_0/4_full_adder_0/full_adder_0/c_in main-block_0/4_full_adder_0/full_adder_0/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1412 main-block_0/4_full_adder_0/full_adder_0/nand_4/va main-block_0/4_full_adder_0/full_adder_0/nand_3/va VDD main-block_0/4_full_adder_0/full_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1413 VDD main-block_0/4_full_adder_0/full_adder_0/nand_3/vb main-block_0/4_full_adder_0/full_adder_0/nand_4/va main-block_0/4_full_adder_0/full_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1414 main-block_0/4_full_adder_0/full_adder_0/nand_3/a_n5_n39# main-block_0/4_full_adder_0/full_adder_0/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1415 main-block_0/4_full_adder_0/full_adder_0/nand_4/va main-block_0/4_full_adder_0/full_adder_0/nand_3/vb main-block_0/4_full_adder_0/full_adder_0/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1416 main-block_0/4_full_adder_0/full_adder_0/nand_2/va and_2/vout VDD main-block_0/4_full_adder_0/full_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1417 VDD main-block_0/and_1/vout main-block_0/4_full_adder_0/full_adder_0/nand_2/va main-block_0/4_full_adder_0/full_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1418 main-block_0/4_full_adder_0/full_adder_0/nand_0/a_n5_n39# and_2/vout GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1419 main-block_0/4_full_adder_0/full_adder_0/nand_2/va main-block_0/and_1/vout main-block_0/4_full_adder_0/full_adder_0/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1420 main-block_0/4_full_adder_0/full_adder_0/nand_7/va main-block_0/4_full_adder_0/full_adder_0/nand_4/va VDD main-block_0/4_full_adder_0/full_adder_0/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1421 VDD main-block_0/4_full_adder_0/full_adder_0/nand_6/va main-block_0/4_full_adder_0/full_adder_0/nand_7/va main-block_0/4_full_adder_0/full_adder_0/nand_5/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1422 main-block_0/4_full_adder_0/full_adder_0/nand_5/a_n5_n39# main-block_0/4_full_adder_0/full_adder_0/nand_4/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1423 main-block_0/4_full_adder_0/full_adder_0/nand_7/va main-block_0/4_full_adder_0/full_adder_0/nand_6/va main-block_0/4_full_adder_0/full_adder_0/nand_5/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1424 main-block_0/4_full_adder_0/full_adder_0/nand_3/va and_2/vout VDD main-block_0/4_full_adder_0/full_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1425 VDD main-block_0/4_full_adder_0/full_adder_0/nand_2/va main-block_0/4_full_adder_0/full_adder_0/nand_3/va main-block_0/4_full_adder_0/full_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1426 main-block_0/4_full_adder_0/full_adder_0/nand_1/a_n5_n39# and_2/vout GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1427 main-block_0/4_full_adder_0/full_adder_0/nand_3/va main-block_0/4_full_adder_0/full_adder_0/nand_2/va main-block_0/4_full_adder_0/full_adder_0/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1428 main-block_0/4_full_adder_0/full_adder_0/c_in main-block_0/4_full_adder_0/half_adder_0/nand_2/va VDD main-block_0/4_full_adder_0/half_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1429 VDD main-block_0/4_full_adder_0/half_adder_0/nand_2/va main-block_0/4_full_adder_0/full_adder_0/c_in main-block_0/4_full_adder_0/half_adder_0/nand_4/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1430 main-block_0/4_full_adder_0/half_adder_0/nand_4/a_n5_n39# main-block_0/4_full_adder_0/half_adder_0/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1431 main-block_0/4_full_adder_0/full_adder_0/c_in main-block_0/4_full_adder_0/half_adder_0/nand_2/va main-block_0/4_full_adder_0/half_adder_0/nand_4/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1432 main-block_0/4_full_adder_0/half_adder_0/nand_3/vb main-block_0/4_full_adder_0/half_adder_0/nand_2/va VDD main-block_0/4_full_adder_0/half_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1433 VDD main-block_0/and_0/vout main-block_0/4_full_adder_0/half_adder_0/nand_3/vb main-block_0/4_full_adder_0/half_adder_0/nand_2/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1434 main-block_0/4_full_adder_0/half_adder_0/nand_2/a_n5_n39# main-block_0/4_full_adder_0/half_adder_0/nand_2/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1435 main-block_0/4_full_adder_0/half_adder_0/nand_3/vb main-block_0/and_0/vout main-block_0/4_full_adder_0/half_adder_0/nand_2/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1436 p1 main-block_0/4_full_adder_0/half_adder_0/nand_3/va VDD main-block_0/4_full_adder_0/half_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1437 VDD main-block_0/4_full_adder_0/half_adder_0/nand_3/vb p1 main-block_0/4_full_adder_0/half_adder_0/nand_3/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1438 main-block_0/4_full_adder_0/half_adder_0/nand_3/a_n5_n39# main-block_0/4_full_adder_0/half_adder_0/nand_3/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1439 p1 main-block_0/4_full_adder_0/half_adder_0/nand_3/vb main-block_0/4_full_adder_0/half_adder_0/nand_3/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1440 main-block_0/4_full_adder_0/half_adder_0/nand_2/va and_1/vout VDD main-block_0/4_full_adder_0/half_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1441 VDD main-block_0/and_0/vout main-block_0/4_full_adder_0/half_adder_0/nand_2/va main-block_0/4_full_adder_0/half_adder_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1442 main-block_0/4_full_adder_0/half_adder_0/nand_0/a_n5_n39# and_1/vout GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1443 main-block_0/4_full_adder_0/half_adder_0/nand_2/va main-block_0/and_0/vout main-block_0/4_full_adder_0/half_adder_0/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1444 main-block_0/4_full_adder_0/half_adder_0/nand_3/va and_1/vout VDD main-block_0/4_full_adder_0/half_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1445 VDD main-block_0/4_full_adder_0/half_adder_0/nand_2/va main-block_0/4_full_adder_0/half_adder_0/nand_3/va main-block_0/4_full_adder_0/half_adder_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1446 main-block_0/4_full_adder_0/half_adder_0/nand_1/a_n5_n39# and_1/vout GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1447 main-block_0/4_full_adder_0/half_adder_0/nand_3/va main-block_0/4_full_adder_0/half_adder_0/nand_2/va main-block_0/4_full_adder_0/half_adder_0/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1448 main-block_0/and_3/vout main-block_0/and_3/nand_1/va VDD main-block_0/and_3/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1449 VDD main-block_0/and_3/nand_1/va main-block_0/and_3/vout main-block_0/and_3/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1450 main-block_0/and_3/nand_1/a_n5_n39# main-block_0/and_3/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1451 main-block_0/and_3/vout main-block_0/and_3/nand_1/va main-block_0/and_3/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1452 main-block_0/and_3/nand_1/va a3 VDD main-block_0/and_3/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1453 VDD b1 main-block_0/and_3/nand_1/va main-block_0/and_3/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1454 main-block_0/and_3/nand_0/a_n5_n39# a3 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1455 main-block_0/and_3/nand_1/va b1 main-block_0/and_3/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1456 main-block_0/and_2/vout main-block_0/and_2/nand_1/va VDD main-block_0/and_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1457 VDD main-block_0/and_2/nand_1/va main-block_0/and_2/vout main-block_0/and_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1458 main-block_0/and_2/nand_1/a_n5_n39# main-block_0/and_2/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1459 main-block_0/and_2/vout main-block_0/and_2/nand_1/va main-block_0/and_2/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1460 main-block_0/and_2/nand_1/va a2 VDD main-block_0/and_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1461 VDD b1 main-block_0/and_2/nand_1/va main-block_0/and_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1462 main-block_0/and_2/nand_0/a_n5_n39# a2 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1463 main-block_0/and_2/nand_1/va b1 main-block_0/and_2/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1464 main-block_0/and_1/vout main-block_0/and_1/nand_1/va VDD main-block_0/and_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1465 VDD main-block_0/and_1/nand_1/va main-block_0/and_1/vout main-block_0/and_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1466 main-block_0/and_1/nand_1/a_n5_n39# main-block_0/and_1/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1467 main-block_0/and_1/vout main-block_0/and_1/nand_1/va main-block_0/and_1/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1468 main-block_0/and_1/nand_1/va a1 VDD main-block_0/and_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1469 VDD b1 main-block_0/and_1/nand_1/va main-block_0/and_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1470 main-block_0/and_1/nand_0/a_n5_n39# a1 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1471 main-block_0/and_1/nand_1/va b1 main-block_0/and_1/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1472 main-block_0/and_0/vout main-block_0/and_0/nand_1/va VDD main-block_0/and_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1473 VDD main-block_0/and_0/nand_1/va main-block_0/and_0/vout main-block_0/and_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1474 main-block_0/and_0/nand_1/a_n5_n39# main-block_0/and_0/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1475 main-block_0/and_0/vout main-block_0/and_0/nand_1/va main-block_0/and_0/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1476 main-block_0/and_0/nand_1/va a0 VDD main-block_0/and_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1477 VDD b1 main-block_0/and_0/nand_1/va main-block_0/and_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1478 main-block_0/and_0/nand_0/a_n5_n39# a0 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1479 main-block_0/and_0/nand_1/va b1 main-block_0/and_0/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1480 and_3/vout and_3/nand_1/va VDD and_3/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1481 VDD and_3/nand_1/va and_3/vout and_3/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1482 and_3/nand_1/a_n5_n39# and_3/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1483 and_3/vout and_3/nand_1/va and_3/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1484 and_3/nand_1/va a3 VDD and_3/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1485 VDD b0 and_3/nand_1/va and_3/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1486 and_3/nand_0/a_n5_n39# a3 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1487 and_3/nand_1/va b0 and_3/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1488 and_2/vout and_2/nand_1/va VDD and_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1489 VDD and_2/nand_1/va and_2/vout and_2/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1490 and_2/nand_1/a_n5_n39# and_2/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1491 and_2/vout and_2/nand_1/va and_2/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1492 and_2/nand_1/va a2 VDD and_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1493 VDD b0 and_2/nand_1/va and_2/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1494 and_2/nand_0/a_n5_n39# a2 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1495 and_2/nand_1/va b0 and_2/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1496 and_1/vout and_1/nand_1/va VDD and_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1497 VDD and_1/nand_1/va and_1/vout and_1/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1498 and_1/nand_1/a_n5_n39# and_1/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1499 and_1/vout and_1/nand_1/va and_1/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1500 and_1/nand_1/va a1 VDD and_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1501 VDD b0 and_1/nand_1/va and_1/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1502 and_1/nand_0/a_n5_n39# a1 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1503 and_1/nand_1/va b0 and_1/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1504 p0 and_0/nand_1/va VDD and_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1505 VDD and_0/nand_1/va p0 and_0/nand_1/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1506 and_0/nand_1/a_n5_n39# and_0/nand_1/va GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1507 p0 and_0/nand_1/va and_0/nand_1/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1508 and_0/nand_1/va a0 VDD and_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=198 pd=58 as=0 ps=0
+M1509 VDD b0 and_0/nand_1/va and_0/nand_0/w_n24_n9# pmos w=18 l=3
++  ad=0 pd=0 as=0 ps=0
+M1510 and_0/nand_0/a_n5_n39# a0 GND Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+M1511 and_0/nand_1/va b0 and_0/nand_0/a_n5_n39# Gnd nmos w=10 l=3
++  ad=110 pd=42 as=0 ps=0
+C0 main-block_2/and_1/vout main-block_2/4_full_adder_0/b2 3.28fF
+C1 main-block_0/and_1/vout and_3/vout 3.28fF
+C2 main-block_1/and_1/vout main-block_1/4_full_adder_0/b2 3.28fF
+C3 p0 Gnd 19.59fF
+C4 and_1/vout Gnd 6.69fF
+C5 and_2/vout Gnd 7.18fF
+C6 a3 Gnd 2.07fF
+C7 and_3/vout Gnd 11.80fF
+C8 main-block_0/and_0/vout Gnd 36.45fF
+C9 main-block_0/and_1/vout Gnd 24.69fF
+C10 main-block_0/and_2/vout Gnd 17.97fF
+C11 b1 Gnd 2.46fF
+C12 main-block_0/and_3/vout Gnd 11.23fF
+C13 p1 Gnd 19.74fF
+C14 main-block_1/4_full_adder_0/b0 Gnd 16.06fF
+C15 main-block_1/4_full_adder_0/b1 Gnd 7.29fF
+C16 zero Gnd 15.65fF
+C17 main-block_1/4_full_adder_0/b2 Gnd 6.65fF
+C18 main-block_1/4_full_adder_0/b3 Gnd 10.26fF
+C19 main-block_1/and_0/vout Gnd 36.45fF
+C20 main-block_1/and_1/vout Gnd 24.69fF
+C21 main-block_1/and_2/vout Gnd 17.97fF
+C22 main-block_1/and_3/vout Gnd 11.23fF
+C23 p2 Gnd 10.89fF
+C24 main-block_2/4_full_adder_0/b0 Gnd 18.08fF
+C25 main-block_2/4_full_adder_0/b1 Gnd 12.50fF
+C26 main-block_2/4_full_adder_0/b3 Gnd 18.22fF
+C27 main-block_2/and_0/vout Gnd 36.45fF
+C28 main-block_2/and_1/vout Gnd 24.69fF
+C29 main-block_2/and_2/vout Gnd 17.97fF
+C30 main-block_2/and_3/vout Gnd 11.23fF
+C31 p3 Gnd 2.10fF
+C32 p4 Gnd 4.13fF
+C33 p5 Gnd 2.38fF
+C34 p6 Gnd 4.03fF
+C35 p7 Gnd 2.87fF
+C36 VDD Gnd 11.47fF
+.tran 0.1n 100n
+.control
+run
+plot v(p0) v(p1)+2 v(p2)+4 v(p3)+6 v(p4)+8 v(p5)+10 v(p6)+12 v(p7)+14
+
+.endc
+.end

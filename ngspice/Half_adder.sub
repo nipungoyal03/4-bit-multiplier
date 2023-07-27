@@ -1,0 +1,14 @@
+
+.include Nand.sub
+.include 22nm_MGK.pm
+
+.SUBCKT Half_adder A B S C vdd gnd 
+
+
+Xn1 A B 1 vdd gnd Nand
+Xn2 A 1 2 vdd gnd Nand
+Xn3 1 B 3 vdd gnd Nand
+Xn4 2 3 S vdd gnd Nand
+Xn5 1 1 C vdd gnd Nand
+
+.ends

@@ -1,0 +1,122 @@
+magic
+tech scmos
+timestamp 1667841856
+<< polysilicon >>
+rect -4 75 -1 76
+rect 10 75 13 76
+rect -285 73 -282 74
+rect -271 73 -268 74
+rect -375 -23 -372 -22
+rect -361 -23 -358 -22
+rect -201 -24 -198 -23
+rect -187 -24 -184 -23
+rect -108 -25 -105 -24
+rect -94 -25 -91 -24
+rect 95 -32 98 -31
+rect 109 -32 112 -31
+rect -4 -112 -1 -111
+rect 10 -112 13 -111
+rect -288 -113 -285 -112
+rect -274 -113 -271 -112
+rect 199 -164 202 -163
+rect 213 -164 216 -163
+<< metal1 >>
+rect -414 98 -290 103
+rect -257 98 -228 103
+rect -414 7 -408 98
+rect -332 90 -290 95
+rect -332 7 -325 90
+rect -414 2 -380 7
+rect -347 2 -325 7
+rect -408 -6 -380 -1
+rect -408 -91 -403 -6
+rect -331 -83 -325 2
+rect -233 6 -228 98
+rect -135 100 -9 105
+rect 24 100 42 105
+rect -135 6 -129 100
+rect -233 1 -206 6
+rect -173 5 -129 6
+rect -47 92 -9 97
+rect -47 5 -41 92
+rect -173 1 -113 5
+rect -135 0 -113 1
+rect -80 0 -41 5
+rect -233 -7 -206 -2
+rect -233 -83 -227 -7
+rect -331 -88 -293 -83
+rect -260 -88 -227 -83
+rect -145 -8 -113 -3
+rect -408 -96 -343 -91
+rect -331 -126 -325 -88
+rect -145 -90 -139 -8
+rect -47 -82 -41 0
+rect 36 -2 42 100
+rect 36 -7 90 -2
+rect 122 -6 149 -2
+rect 59 -15 90 -10
+rect 59 -82 65 -15
+rect -47 -87 -9 -82
+rect 24 -87 65 -82
+rect -315 -96 -293 -91
+rect -145 -95 -57 -90
+rect -47 -123 -41 -87
+rect -29 -95 -9 -90
+rect -331 -131 -75 -126
+rect -47 -129 72 -123
+rect -80 -142 -75 -131
+rect 66 -134 72 -129
+rect 66 -139 194 -134
+rect 227 -138 248 -134
+rect -80 -147 194 -142
+<< m2contact >>
+rect -343 -96 -336 -91
+rect -322 -96 -315 -91
+rect -57 -95 -50 -90
+rect -36 -95 -29 -90
+<< metal2 >>
+rect -336 -96 -322 -91
+rect -50 -95 -36 -90
+use nand  nand_1 /home/nipun/magic
+timestamp 1594232584
+transform 1 0 -277 0 1 115
+box -24 -41 28 30
+use nand  nand_5
+timestamp 1594232584
+transform 1 0 4 0 1 117
+box -24 -41 28 30
+use nand  nand_0
+timestamp 1594232584
+transform 1 0 -367 0 1 19
+box -24 -41 28 30
+use nand  nand_3
+timestamp 1594232584
+transform 1 0 -193 0 1 18
+box -24 -41 28 30
+use nand  nand_4
+timestamp 1594232584
+transform 1 0 -100 0 1 17
+box -24 -41 28 30
+use nand  nand_7
+timestamp 1594232584
+transform 1 0 103 0 1 10
+box -24 -41 28 30
+use nand  nand_2
+timestamp 1594232584
+transform 1 0 -280 0 1 -71
+box -24 -41 28 30
+use nand  nand_6
+timestamp 1594232584
+transform 1 0 4 0 1 -70
+box -24 -41 28 30
+use nand  nand_8
+timestamp 1594232584
+transform 1 0 207 0 1 -122
+box -24 -41 28 30
+<< labels >>
+rlabel metal1 -411 17 -411 17 3 va
+rlabel metal1 -405 -50 -405 -50 1 vb
+rlabel metal1 -144 -56 -144 -56 1 c_in
+rlabel metal1 141 -3 141 -3 1 sum
+rlabel metal1 240 -136 240 -136 1 c_out
+<< end >>

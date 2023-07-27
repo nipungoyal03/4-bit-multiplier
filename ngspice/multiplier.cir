@@ -1,0 +1,41 @@
+.include full_adder.sub
+.include And.sub
+.include 4_bit_adder.sub
+.include main-block.sub
+
+.option TEMP=27C
+.param LAMBDA=22n
+.param width_P=44n
+
+.param SUPPLY=1
+VDS vdd gnd 1
+
+va A3 gnd 1
+vb A2 gnd 1
+vc A1 gnd 1
+vd A0 gnd 1
+ve B0 gnd 1
+vf B1 gnd 0
+vg B2 gnd 0
+vh B3 gnd 0
+vi z gnd 0
+
+Xa1 A0 B0 P0 vdd gnd And
+Xa2 A1 B0 A1B0 vdd gnd And
+Xa3 A2 B0 A2B0 vdd gnd And
+Xa4 A3 B0 A3B0 vdd gnd And
+
+
+Xm_b1 A0 A1 A2 A3 B1 A1B0 A2B0 A3B0 z P1 S1 S2 S3 carry1 vdd gnd main_block
+Xm_b2 A0 A1 A2 A3 B2 S1 S2 S3 carry1 P2 S1n S2n S3n carry2 vdd gnd main_block
+Xm_b3 A0 A1 A2 A3 B3 S1n S2n S3n carry2 P3 P4 P5 P6 P7 vdd gnd main_block
+
+
+.tran 0.1n 25n
+.control
+
+run
+ plot v(P7)+14 V(P6)+12 V(P5)+10 V(P4)+8 V(P3)+6 V(P2)+4 V(P1)+2 V(P0)
+
+.endc
+.end
